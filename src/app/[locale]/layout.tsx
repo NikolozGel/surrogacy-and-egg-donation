@@ -1,16 +1,14 @@
-// app/[locale]/layout.tsx
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
+import Header from "@/components/header/header";
 import "../[locale]/globals.css";
 import { Titillium_Web } from "next/font/google";
 import { FaWhatsapp } from "react-icons/fa6";
 import Link from "next/link";
 import ScrollToTopButton from "@/components/scrollUpButton";
 import type { Metadata } from "next";
-import Script from "next/script"; // ← დააბრუნე ეს import
+import Script from "next/script";
 import { QueryClient } from "@tanstack/react-query";
 import ReactQueryProvider from "@/components/reactqueryprovider";
 import { ReactNode } from "react";
@@ -80,7 +78,9 @@ export default async function LocaleLayout({
 
         <NextIntlClientProvider>
           <Header />
-          <ReactQueryProvider>{children}</ReactQueryProvider>
+          <ReactQueryProvider>
+            <main>{children}</main>
+          </ReactQueryProvider>
 
           <Link
             href="https://wa.me/+995575757535"
@@ -93,7 +93,6 @@ export default async function LocaleLayout({
           </Link>
 
           <ScrollToTopButton />
-          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

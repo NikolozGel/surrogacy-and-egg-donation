@@ -1,13 +1,9 @@
-import Slider from "@/components/Slider";
-import SurrogacyIntroSection from "@/components/surrogacyIntroSection";
-import SurrogacyAndEggDonationOptions from "@/components/surrogacyAndEggDonationOptions";
-import OurMissionSection from "@/components/ourMissionSection";
-import ImageSlider from "@/components/ImageSlider/imageSlider";
-import AccordionFaq from "@/components/accordionFaq";
-import ContactCallToAction from "@/components/contactCallToAction";
+import ContactCTA from "@/components/contact-CTA/ContactCta";
+import PathToParenthood from "@/components/path-to-parenthood/PathToParenthood";
+import ProgramSections from "@/components/sections copy/ProgramSections";
+import Slider from "@/components/slider/Slider";
 import { getTranslations } from "next-intl/server";
 
-// ✅ 1. ლოკალიზებული Metadata-ის გენერაცია
 export async function generateMetadata(props: {
   params: Promise<{ locale: string }>;
 }) {
@@ -40,10 +36,10 @@ export async function generateMetadata(props: {
         params.locale === "ka"
           ? "ka_GE"
           : params.locale === "ru"
-          ? "ru_RU"
-          : params.locale === "zh"
-          ? "zh_CN"
-          : "en_US",
+            ? "ru_RU"
+            : params.locale === "zh"
+              ? "zh_CN"
+              : "en_US",
       type: "website",
     },
     alternates: {
@@ -62,38 +58,13 @@ export async function generateMetadata(props: {
   };
 }
 
-// ✅ 2. გვერდის კომპონენტი უცვლელი რჩება
-const images = [
-  {
-    url: "/assets/clinic/zizi.JPG",
-    title: "title-2",
-    subtitle: "subtitle-2",
-    description: "description-2",
-  },
-  {
-    url: "/assets/doctors/laliko.jpg",
-    title: "title",
-    subtitle: "subtitle",
-    description: "description",
-  },
-];
-
 export default function HomePage() {
   return (
-    <main className="bg-gray-50">
+    <>
       <Slider />
-      <div className="relative">
-        <SurrogacyAndEggDonationOptions />
-      </div>
-      <div className="lg:px-8">
-        <SurrogacyIntroSection />
-        <OurMissionSection />
-      </div>
-      <ImageSlider images={images} />
-      <div className="px-5">
-        <AccordionFaq />
-      </div>
-      <ContactCallToAction />
-    </main>
+      <PathToParenthood />
+      <ProgramSections />
+      <ContactCTA />
+    </>
   );
 }

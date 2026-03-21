@@ -1,38 +1,53 @@
 {
+  "Navigation": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "ourTeam": "Our Team",
+    "law": "Law",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "surrogacyOptions": {
+    "quote": "Where there is hope, there is life. It fills us with fresh courage and makes us strong again.",
+    "author": "— Anne Frank",
+    "cta": "Become a Parent"
+  },
   "homePage": {
     "seoTitle": "Surrogacy & Egg Donation Agency Helping Families Grow | IVFertilityGeorgia",
     "seoDescription": "Helping dreams of parenthood come true through compassion, trust, and care. Explore IVF, surrogacy, and egg donation in Georgia.",
-    "ogImageAlt": "Happy family after successful surrogacy in Georgia",
-    "registrationBtn": "Contact Us To Learn More",
-    "topHeaderTitle": "Every journey to parenthood is unique. We’re here for yours",
-    "register": "Register Now",
-    "title": "Where Hope Meets Life",
-    "description": "Helping dreams of parenthood come true through compassion, trust, and care.",
-    "about": "A Path to Parenthood, Guided with Heart",
-    "aboutText": "At [Your Company Name], we believe every family’s story is unique. Whether you’re seeking a surrogate or an egg donor, we’re here to walk beside you — offering guidance, support, and care every step of the way. With a deep respect for every journey, we connect intended parents, surrogates, and donors with kindness, integrity, and understanding.",
-    "whyChooseUs": "Why Families Trust [Your Company Name]",
-    "whyChooseUsList": [
-      "Personalized support throughout your entire journey",
-      "Thoroughly screened, compassionate surrogates and donors",
-      "Transparent process with no hidden steps",
-      "Experienced team committed to your peace of mind",
-      "Respect, dignity, and care for all involved"
-    ],
-    "missionTitle": "Our Mission",
-    "missionText": "Our mission is simple: to build families with heart. We are dedicated to making the process of surrogacy and egg donation as smooth and meaningful as possible, creating an environment where trust, empathy, and dreams flourish.",
-    "readyToBeginTitle": "Ready to Begin?",
-    "readyToBeginText": "Whether you’re hoping to grow your family or offer the gift of life to someone else, we are here to guide you. Your journey starts with a single step — and we’ll be with you every step of the way.",
-    "getStartedButton": "Get Started",
-    "learnMoreButton": "Learn More",
-    "main_title": "Surrogacy & Egg Donation Agency Helping Families Grow",
-    "main_text": "Compassionate support and expert guidance for intended parents, surrogates, and egg donors. Your journey to parenthood starts here.",
-    "becomeSurrogateBtn": "Become a Surrogate",
-    "becomeDonorBtn": "Become an Egg Donor",
-    "becomeSurrogateText": "As a surrogate, you have the power to give the greatest gift helping someone create a family. We guide and support you throughout the entire process, every step of the way.",
-    "becomeEggDonorText": " Egg donation is a meaningful way to help others experience the joy of parenthood. If you're ready to make a lasting difference, we’re here to ensure your journey is safe, respectful, and rewarding.",
-    "becomeParent": "Become a Parent",
-    "becomeParentBtn": "Become a Parent",
-    "becomeParentText": "Being a parent is one of life’s most significant experiences. We offer support and resources to make your journey to parenthood as smooth and enjoyable as possible."
+    "ogImageAlt": "Happy family after successful surrogacy in Georgia"
+  },
+  "modal": {
+    "title": "Contact Us",
+    "description": "Fill out the form below and our team will get back to you as soon as possible.",
+    "descriptionSecond": "We typically respond within 1–2 business days.",
+    "fullName": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "country": "Country",
+    "fieldRequired": "This field is required",
+    "message": "Message",
+    "submit": "Send Message",
+    "successTitle": "Message Sent!",
+    "successMessage": "Thank you for reaching out. We'll be in touch with you shortly.",
+    "genericError": "Something went wrong. Please try again."
+  },
+  "ContactCta": {
+    "badge": "FamilyWay International",
+    "heading": "Let's Talk. We're Here for Every Part of Your Story",
+    "paragraph1": "Many families who contact us have already spent years researching fertility treatment, navigating previous medical experiences, and exploring the different paths to parenthood.The questions you bring are ones we hear every day from understanding success rates in Georgia to how surrogate matching, egg donation, legal protections, and timelines work. Our team is here to provide clear and honest guidance based on real experience working with international parents.",
+    "paragraph2": "Tell us a little about your situation as much or as little as you feel comfortable sharing. A senior member of our coordination team will personally review your message and respond within one business day.",
+    "button": "Contact Us"
+  },
+  "PathToParenthood": {
+    "subtitle": "We support international parents pursuing fertility treatment in Georgia",
+    "cta": "Become a parent",
+    "heading": "Your Path to Parenthood in Georgia",
+    "imageAlt": "A tender moment symbolizing the beginning of parenthood",
+    "body1": "Surrogacy has been legally supported in Georgia for decades, making the country one of the most recognized destinations for assisted reproductive services. Over the years, the development of modern IVF technologies and experienced medical teams has created a reliable environment for individuals and couples seeking alternative paths to parenthood. This progress has also led to improved clinical standards, greater transparency, and a stronger focus on patient-centered care throughout the journey.",
+    "body2": "For those facing fertility challenges, surrogacy can offer a meaningful and realistic opportunity to build a family. At FamilyWay international, we approach every journey with responsibility, empathy, and professionalism. We understand the emotional and medical complexity involved, which is why we ensure continuous support for both intended parents and surrogate mothers. From medical coordination to psychological guidance, every step is carefully managed to create a safe, respectful, and well-supported experience focused on achieving a healthy pregnancy and a positive outcome for everyone involved.",
+    "quote": "Our role is simple: to ensure the process is medically sound, legally secure, and clearly organized from start to finish."
   },
   "homeAccordionFaq": {
     "title": "Do you have any",
@@ -70,10 +85,7 @@
     "fourthTitle": "Free Family Support",
     "fourthDescription": "Becoming parents is a journey filled with love and anticipation. To make this path easier, we provide many complimentary services: airport transfers, translation support, nanny matching, and more. We are also happy to visit your country for a free one-hour consultation, so you can meet us face-to-face. With IVFertilityGeorgia, you are never alone we are with you every step of the way."
   },
-  "surrogacyOptions": {
-    "title": "Trusted Surrogacy and IVF Programs in Georgia",
-    "button": "Start Your Journey"
-  },
+
   "ourMission": {
     "title": "What Makes Us",
     "subtitle": "Truly Exceptional",
@@ -246,15 +258,7 @@
       "answer": "Countries like Georgia, the United States, Ukraine (under certain conditions), and Canada are known for having established legal frameworks supporting ethical surrogacy. Our team can advise you based on your citizenship and personal situation."
     }
   },
-  "modal": {
-    "headline": "Together, We Create Hope",
-    "paragraph1": "Facing infertility can be an overwhelming and emotional experience. But you are not alone. Every step forward opens new possibilities and rekindles hope.",
-    "paragraph2": "Through the kindness of donation and the generosity of surrogacy, families are created and lives are forever changed.",
-    "paragraph3": "Your involvement holds deep meaning. It’s a true act of compassion, courage, and the beginning of something beautiful.",
-    "paragraph4": "By taking this step, you can make a lasting difference in someone’s life and help build a future filled with love.",
-    "paragraph5": "Fill out the form below to become part of something extraordinary. Creating miracles, one life at a time.",
-    "button": "Send"
-  },
+
   "clinic": {
     "visitTitle": "Visit Our Clinic",
     "visitText": "We warmly welcome you to visit our clinic and meet the passionate team behind IVFertility. During your visit, you’ll have the opportunity to explore our state-of-the-art facilities, speak directly with our experts, and learn more about how we can support your journey to parenthood.",
@@ -269,13 +273,7 @@
   "footer": {
     "copyright": "© 2025 IVFertilityGeorgia. All rights reserved."
   },
-  "pages": {
-    "home": "Home",
-    "about": "About",
-    "contact": "Contact",
-    "prices": "Prices",
-    "faq": "FAQ"
-  },
+
   "registerPage": {
     "register-title": "The Power of Surrogacy & Egg Donation",
     "register-paragraph": " If you're looking for an emotional and meaningful path to  parenthood, surrogacy and egg donation can be life-changing steps. This beautiful journey allows dreams to come true, bringing the joy of new life into the world.",
