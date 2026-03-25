@@ -12,6 +12,7 @@ import Script from "next/script";
 import { QueryClient } from "@tanstack/react-query";
 import ReactQueryProvider from "@/components/reactqueryprovider";
 import { ReactNode } from "react";
+import Footer from "@/components/footer/Footer";
 
 export const queryClient = new QueryClient();
 
@@ -91,7 +92,7 @@ export default async function LocaleLayout({
               <FaWhatsapp className="h-13 w-13 lg:w-18 lg:h-18" color="white" />
             </div>
           </Link>
-
+          <Footer />
           <ScrollToTopButton />
         </NextIntlClientProvider>
       </body>

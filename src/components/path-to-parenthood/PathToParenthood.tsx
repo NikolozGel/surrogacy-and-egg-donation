@@ -1,12 +1,12 @@
 import Image from "next/image";
-import parent from "@/../public/assets/pregnant-women/pregnant-women.jpg";
+import parent from "@/../public/assets/images/pregnant-women/pregnant-women.jpg";
 import { useTranslations } from "next-intl";
 
 export default function PathToParenthood() {
   const t = useTranslations("PathToParenthood");
 
   return (
-    <section className="relative overflow-hidden bg-card py-20">
+    <section className="relative overflow-hidden py-20">
       <div className="flex flex-col items-center mb-10"></div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div>

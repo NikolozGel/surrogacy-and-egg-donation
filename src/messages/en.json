@@ -10,7 +10,7 @@
   },
   "surrogacyOptions": {
     "quote": "Where there is hope, there is life. It fills us with fresh courage and makes us strong again.",
-    "author": "— Anne Frank",
+    "author": " Anne Frank",
     "cta": "Become a Parent"
   },
   "homePage": {
@@ -49,235 +49,320 @@
     "body2": "For those facing fertility challenges, surrogacy can offer a meaningful and realistic opportunity to build a family. At FamilyWay international, we approach every journey with responsibility, empathy, and professionalism. We understand the emotional and medical complexity involved, which is why we ensure continuous support for both intended parents and surrogate mothers. From medical coordination to psychological guidance, every step is carefully managed to create a safe, respectful, and well-supported experience focused on achieving a healthy pregnancy and a positive outcome for everyone involved.",
     "quote": "Our role is simple: to ensure the process is medically sound, legally secure, and clearly organized from start to finish."
   },
-  "homeAccordionFaq": {
-    "title": "Do you have any",
-    "title-highlight": "questions?",
-    "description": "Whether you are thinking about IVF, considering fertility surgery, or planning surrogacy and egg donation, we provide complete services to support you at every stage. Your journey to parenthood begins here with IVFertilityGeorgia. Contact us and together we will turn your dream of becoming a parent into reality.",
-    "fAQTitle": "Still have questions? You can contact us directly or explore our FAQ page for clear answers.",
-    "FAQContactBtn": "Contact Us",
-    "FAQPageBtn": "See FAQs",
-    "q1": {
-      "question": "How long does the entire surrogacy process usually take, from the very beginning until I hold my baby?",
-      "answer": "On average, the surrogacy process takes about 12 to 18 months. This includes matching with the right surrogate, completing medical and psychological screenings, signing legal agreements, undergoing embryo transfer, and then the pregnancy itself. Every journey is unique, but we guide you step by step to make the process clear and reassuring."
+  "missionSection": {
+    "title": "Our Story and Mission",
+    "description1": "FamilyWay International was created with a simple but meaningful goal to make the path to parenthood more accessible and less overwhelming. For more than a decade, we have been working in the field of reproductive medicine in Georgia, supporting individuals and couples through one of the most important journeys of their lives.",
+    "description2": "We understand that every story is different. That is why we focus on providing safe, ethical, and medically advanced IVF and surrogacy programs, while making sure each intended parent feels informed, respected, and genuinely supported at every step.",
+    "visionTitle": "Our Vision",
+    "visionText": "To become a trusted and reliable fertility partner for families around the world.",
+    "valuesTitle": "Our Values",
+    "valuesText": "Care, honesty, and a strong commitment to medical quality.",
+    "imageAlt": "Modern fertility clinic interior at FamilyWay International in Tbilisi, Georgia"
+  },
+  "teamSection": {
+    "title": "FamilyWay International Team",
+    "members": {
+      "1": {
+        "name": "Lali Megreladze",
+        "role": "Medical Director & Reproductive Endocrinologist"
+      },
+      "2": {
+        "name": "Zizi Gabelashvili",
+        "role": "CEO"
+      },
+      "3": {
+        "name": "Izuna Gvariashvili",
+        "role": "Chief Embryologist"
+      },
+      "4": {
+        "name": "Mariam Gelashvili",
+        "role": "International Patient Coordinator"
+      }
     },
-    "q2": {
-      "question": "I'm single, is it still possible for me to become a parent through your program?",
-      "answer": "Yes, it is possible. In Georgia, both single men and single women are welcome to become parents through surrogacy or egg donation. We support individuals as well as couples and create a plan that fits your personal situation with respect and care."
+    "imageAlt": "{name}, {role} at FamilyWay International fertility clinic"
+  },
+  "ServicesPage": {
+    "programs": [
+      {
+        "title": "IVF Treatment",
+        "description": "Our IVF program is tailored to each patient's unique medical profile. From ovarian stimulation to embryo transfer, every phase is conducted under strict clinical protocols by experienced reproductive endocrinologists.",
+        "highlights": [
+          "Personalized stimulation protocols",
+          "Preimplantation genetic testing (PGT-A/PGT-M)",
+          "Vitrification and frozen embryo transfer",
+          "Donor egg and sperm options available"
+        ]
+      },
+      {
+        "title": "Surrogacy Programs",
+        "description": "Georgia's legal framework makes surrogacy a straightforward and well-regulated path to parenthood. We manage every aspect  from surrogate matching and medical screening to legal documentation and delivery coordination.",
+        "highlights": [
+          "Rigorous surrogate screening and health evaluation",
+          "Full legal compliance with Georgian law",
+          "Psychological support for all parties",
+          "Transparent cost structure with no hidden fees"
+        ]
+      },
+      {
+        "title": "Egg Donation",
+        "description": "Our carefully managed egg donation program connects intended parents with healthy, thoroughly screened donors. Every donor undergoes comprehensive medical, genetic, and psychological evaluation before acceptance into the program.",
+        "highlights": [
+          "Extensive donor database with diverse profiles",
+          "Genetic screening and hormonal assessment",
+          "Anonymous and known donation options",
+          "Coordinated cycle synchronization"
+        ]
+      }
+    ],
+    "howItWorks": {
+      "title": "How It Works",
+      "subtitle": "From your first inquiry to welcoming your child, we guide you through every step with clarity and care.",
+      "cta": "GET STARTED NOW!"
     },
-    "q3": {
-      "question": "I’m ready to begin, what should be my first step?",
-      "answer": "The first step is to book a consultation with our specialists. In this meeting we will listen to your story, explain your options in detail, and guide you through the process. Together we will design a plan that matches your goals, whether that is surrogacy, egg donation, or another treatment. This first conversation starts your journey to parenthood."
+    "processSteps": [
+      {
+        "step": "01",
+        "title": "Initial Consultation",
+        "description": "Share your medical history and goals during a free video consultation with our specialists. We listen, assess, and recommend the most suitable program for your situation."
+      },
+      {
+        "step": "02",
+        "title": "Medical Assessment",
+        "description": "Comprehensive diagnostic testing for both partners, including hormonal panels, genetic screening, and reproductive imaging to create a clear clinical picture."
+      },
+      {
+        "step": "03",
+        "title": "Treatment Planning",
+        "description": "Your dedicated coordinator develops a detailed timeline covering every milestone from medication protocols to travel arrangements and legal preparation."
+      },
+      {
+        "step": "04",
+        "title": "Travel & Treatment",
+        "description": "We arrange accommodation, airport transfers, and translator services. Your medical procedures take place in our partner clinic under the supervision of your assigned specialist."
+      },
+      {
+        "step": "05",
+        "title": "Ongoing Support",
+        "description": "After embryo transfer or conception, we provide continuous pregnancy monitoring, regular updates, and full coordination through delivery and postnatal documentation."
+      }
+    ],
+    "learnMore": "Learn More"
+  },
+  "statsSection": {
+    "stats": {
+      "1": {
+        "label": "Babies Born",
+        "suffix": "+"
+      },
+      "2": {
+        "label": "Countries Served",
+        "suffix": "+"
+      },
+      "3": {
+        "label": "IVF Success Rate",
+        "suffix": "%"
+      },
+      "4": {
+        "label": "Expert Team Members",
+        "suffix": "+"
+      }
     }
-  },
-  "contactCallToAction": {
-    "title": " If You Have Any Questions, Do Not Hesitate to Contact Us and Share Your Problems",
-    "description": "We understand that the road to parenthood can be filled with uncertainties and challenges, but it is also one of hope and possibilities. Arrange your initial consultation we're here for you.",
-    "btn": "Book a consultation"
-  },
-  "introSection": {
-    "title": "What We Offer",
-    "subtitle": "",
-    "description": "At IVFertilityGeorgia we support you through every stage of your journey. From the very first consultation until the moment you welcome your baby, our role is to guide you with honesty, care and clear communication. We know this journey is very important and sometimes challenging, which is why we make sure that you always feel safe, supported and respected.",
-    "secTitle": "Caring for Surrogates",
-    "description2": "At IVFertilityGeorgia, surrogate mothers are at the heart of what we do. They carry not only a child, but also the beautiful dream of a family. That is why we provide complete support throughout the journey gentle emotional care, professional medical guidance, and a safe, nurturing environment. Every surrogate feels valued, respected, and supported while helping bring a healthy baby into the world.",
-    "thirdTitle": "Parenthood Journey",
-    "thirdDescription": "Every family deserves the chance to welcome a baby with confidence and peace of mind. With our guaranteed surrogacy programs in Georgia, intended parents know that success is always possible. Even if pregnancy does not happen right away, after up to three IVF cycles with egg donation, we continue additional attempts free of charge until pregnancy is achieved. This promise allows you to move forward with hope and certainty that parenthood is within reach.",
-    "fourthTitle": "Free Family Support",
-    "fourthDescription": "Becoming parents is a journey filled with love and anticipation. To make this path easier, we provide many complimentary services: airport transfers, translation support, nanny matching, and more. We are also happy to visit your country for a free one-hour consultation, so you can meet us face-to-face. With IVFertilityGeorgia, you are never alone we are with you every step of the way."
-  },
-
-  "ourMission": {
-    "title": "What Makes Us",
-    "subtitle": "Truly Exceptional",
-    "title-2": "Welcome to IVF georgia",
-    "welcomeIVFertilityGeorgia": " Every family begins with a dream. At IVFertilityGeorgia, we are here to make that dream of parenthood a beautiful reality. With compassion, trust, and professional care, we support intended parents and surrogate mothers on a joyful journey toward new life. For more than 17 years, our clinic has been a leading choice for fertility treatments, IVF in Georgia, and trusted surrogacy services. Our dedicated team of doctors, counselors, and coordinators offers guidance with kindness and expertise, creating a safe and welcoming environment for everyone. All of our programs are fully legal and ethically managed in Georgia. Families benefit from clear legal protections and comprehensive safeguards, ensuring that both intended parents and surrogate mothers experience peace of mind at every step. What makes us unique is the way we combine medical excellence with heartfelt care. From the first consultation to the joyful moment of welcoming a baby, we stand beside you with encouragement, hope, and unwavering support. At IVFertilityGeorgia, we believe in creating families with love, respect, and trust. Whether you are an intended parent ready to begin your journey or a caring woman inspired to become a surrogate mother, you will find a compassionate team ready to guide you forward. Contact us today to learn more about our services and discover how your dream of family can come true with IVFertilityGeorgia."
-  },
-
-  "aboutPage": {
-    "seoTitle": "About IVFertilityGeorgia | Our Mission and Values",
-    "seoDescription": "Learn more about our compassionate approach to fertility care. Meet our experts and discover how we guide families with ethics, heart, and professionalism.",
-    "ogImageAlt": "Our team supporting intended parents on their fertility journey",
-    "heading_line1": "Your Joy Is Our Purpose",
-    "paragraph": "At IVFertility, every success story is a symbol of hope, courage, and new beginnings. It's a journey we walk together, and every step holds deep meaning for us.",
-    "heading_highlight": "what you're going through",
-    "successStory": "Success Story",
-    "title": "Lali",
-    "subtitle": "Doctor",
-    "description": "Surrogacy is a very special and deeply human way of helping families who cannot have children on their own. It is made possible thanks to compassionate and responsible women who are willing to give the priceless gift of parenthood to others. Surrogacy is not only a medical process but also an act of kindness, hope and love that creates new families. Dr. Lali provides a safe and reliable environment, full professional care and constant support, so that every surrogacy journey can end with health, joy and success.",
-    "title-2": "Zizi",
-    "subtitle-2": "Reproductologist",
-    "description-2": "Reproductive medicine is a field devoted to helping people achieve their dream of having a family. It combines science with responsibility, compassion and professionalism. A reproductologist must not only have medical expertise but also understand the emotions, challenges and hopes of every patient. Dr. Zizi supports couples with dedication and empathy throughout the difficulties of infertility. Her mission goes beyond treatment she also provides psychological care, clear guidance and emotional support. Every consultation is filled with kindness, warmth and hope, giving patients the strength and confidence to continue their journey toward parenthood.",
-    "title-3": "At IVFertility, we believe in the",
-    "highlight": "power of choice",
-    "paragraph1": "At IVFertility, we believe in the power of choice. The journey to parenthood is a deeply personal and unique experience for every individual and couple. That’s why we are dedicated to offering a wide range of personalized solutions. We are committed to providing diverse, flexible pathways that support you in achieving your dream of building a family.",
-    "paragraph2": "We recognize that the path to parenthood can be filled with uncertainties and emotional challenges, but it is also a journey of hope and possibility. Our mission is to empower you with choices that align with your values and circumstances. Whether you're considering IVF, egg donation, surrogacy, or other fertility options, our experienced team is here to guide you every step of the way toward the family you envision.",
-    "expectTitle": "What to",
-    "expectHighlight": "Expect",
-    "expectText": "Beginning your surrogacy journey can feel overwhelming — like stepping into unfamiliar territory. At IVFertility, our mission is to make that journey feel clear, supported, and human. From your very first question to the moment you hold your baby, we're here to walk alongside you. We’ll carefully match you with the right surrogate and help you select an ideal egg donor, while our legal team handles all the necessary paperwork. We also connect you with trusted fertility clinics and keep every detail organized, so you can focus on what truly matters. With our all-inclusive services and compassionate guidance, you're never alone on this path — we’re with you, every step of the way and beyond.",
-    "btnParent": "become a parent",
-    "btnSurrogate": "Become a surrogate",
-    "wayTitle": "Our",
-    "wayHighlight": "Way",
-    "wayText": "At IVFertility, we hold ourselves to the highest standards of ethics, honesty, and transparency. Every step of your journey is handled with clarity and care, so you always feel informed, respected, and confident moving forward.",
-    "feature1Title": "Holistic Fertility Care",
-    "feature1Description": "We see you as a whole person, not just a patient. Our holistic approach combines physical, emotional, and psychological support to create a nurturing environment where you always feel heard, understood, and cared for.",
-    "feature2Title": "Supportive Space",
-    "feature2Description": "We understand that fertility challenges can take a toll on both the heart and mind. That’s why we offer not only expert medical care, but also emotional support through counseling and group sessions—helping you navigate the emotional ups and downs of your journey.",
-    "feature3Title": "Personalized Treatment Plans",
-    "feature3Description": "No two fertility journeys are the same. We take time to listen and understand your personal goals and circumstances before creating a treatment plan designed just for you—giving you the best chance at success.",
-    "feature4Title": "State-of-the-Art Technology",
-    "feature4Description": "We are dedicated to remaining at the forefront of fertility innovation. Our laboratory is equipped with the most advanced technologies, and our specialists continuously pursue research and breakthroughs to deliver the highest quality of care.",
-    "guaranteeTitle": "IVFertility Options",
-    "guaranteeHighlighted": "Guarantee",
-    "guaranteeDescription": "Our Guarantee Program is designed to offer you both emotional and financial peace of mind. With a clear, fixed budget and the reassurance that your dream of having a baby will be fulfilled—no matter how many attempts it takes—you can move forward with confidence. This unique program provides complete transparency, long-term support, and our unwavering commitment to walk with you every step of the way until you bring your baby home.",
-    "benefitEggDonation": "Unlimited access to egg donation",
-    "benefitEmbryoTransfers": "No limit on embryo transfer attempts",
-    "benefitSurrogatePairings": "Unlimited surrogate matching opportunities",
-    "benefitPregnancyCare": "Comprehensive care throughout pregnancy"
-  },
-  "contactPage": {
-    "seoTitle": "Contact IVFertilityGeorgia | Talk to a Surrogacy & IVF Expert",
-    "seoDescription": "Do you have questions about surrogacy, IVF, egg donation, or legal procedures in Georgia? Contact our experienced team for clear answers, guidance, and a personal consultation.",
-    "ogImageAlt": "Intended parents receiving a consultation at a fertility clinic in Georgia",
-    "journeyTitlePart1": "Your Path",
-    "journeyTitlePart2": "to Possibility",
-    "journeyDescription": "Ready to advance your fertility journey? At IVFertility, we’re here to support you at every turn. Whether you need more details, wish to set up a consultation, or simply want to have a conversation, we’re ready to assist in any way we can.",
-    "consultationTitlePart1": "Book",
-    "consultationTitlePart2": "Your",
-    "consultationTitlePart3": "Consultation",
-    "consultationDescription": "Complete our online form or call us to arrange your initial consultation."
-  },
-  "parentPage": {
-    "seoTitle": "Start Your Family with Legal Surrogacy in Georgia | IVFertilityGeorgia",
-    "seoDescription": "Explore affordable, fully legal surrogacy and egg donation programs in Georgia for international parents. Receive expert guidance, transparent pricing, and dedicated support from our caring team.",
-    "ogImageAlt": "Joyful international parents with newborn baby in Georgia after surrogacy journey"
-  },
-  "surrogatePage": {
-    "seoTitle": "Become a Surrogate Mother in Georgia | IVFertilityGeorgia",
-    "seoDescription": "Looking to become a surrogate? Join our legal and supportive surrogacy program in Georgia. Help families struggling with infertility while receiving full care, guidance, and fair compensation.",
-    "ogImageAlt": "Happy surrogate mother supported by fertility experts in Georgia"
-  },
-
-  "prices": {
-    "pricingHeadline": "Clear and Flexible Surrogacy Pricing",
-    "pricingDescription": "Our surrogacy programs are thoughtfully crafted to suit the unique needs of every family. We offer complete transparency, straightforward pricing with no hidden fees, and dedicated support at every stage of your journey.",
-
-    "basicPackageTitle": "Basic Surrogacy Package",
-    "basicPackagePrice": "$39,000",
-    "basicFeature1": "Comprehensive initial medical screening to ensure eligibility and health readiness",
-    "basicFeature2": "Personalized surrogate matching with careful compatibility consideration",
-    "basicFeature3": "Full legal contract drafting and support to protect all parties involved",
-    "basicFeature4": "One embryo transfer cycle, including preparation and coordination",
-    "basicFeature5": "Ongoing pregnancy monitoring to ensure safety and progress at every stage",
-
-    "standardPackageTitle": "Standard Surrogacy Package",
-    "standardPackagePrice": "$54,000",
-    "standardFeature1": "Includes all services from the Basic Package",
-    "standardFeature2": "Unlimited embryo transfer attempts for increased chances of success",
-    "standardFeature3": "Monthly wellness reports to track the surrogate's health and progress",
-    "standardFeature4": "Professional psychological support throughout the journey",
-    "standardFeature5": "Airport pickup and comfortable accommodation arrangements for your visits",
-
-    "vipPackageTitle": "VIP Surrogacy Package",
-    "vipPackagePrice": "$72,000",
-    "vipFeature1": "Includes all services from the Standard Package",
-    "vipFeature2": "Dedicated personal coordinator for seamless communication and guidance",
-    "vipFeature3": "Exclusive care in a private medical facility for added comfort and privacy",
-    "vipFeature4": "Full maternity concierge service to assist with daily needs and logistics",
-    "vipFeature5": "Comprehensive legal and travel support after the birth of your child",
-
-    "includedSectionTitle": "What’s Included in Our Pricing?",
-    "includedParagraph1": "Each of our packages is thoughtfully designed to offer emotional support, top-tier medical care, legal assurance, and step-by-step guidance. Whether you're just beginning or continuing your path, we focus on trust, transparency, and personalized care.",
-    "includedParagraph2": "We believe parenthood should be accessible, empowering, and easy to navigate. That’s why we work closely with you to simplify every step, provide honest answers, and ensure clarity throughout your journey.",
-    "includedParagraph3": "Have specific medical or legal requirements? We also offer flexible, customizable plans tailored to your family's unique needs.",
-
-    "trustTagline": "Why Families Trust IVFertility",
-    "trustHeadline": "Compassionate Care. Proven Success. Trusted Worldwide.",
-    "trustParagraph": "Families from across the globe choose IVFertility for our exceptional outcomes, transparent pricing, and deeply personalized support. We’re proud to turn hope into reality for countless intended parents with dedication and heart.",
-
-    "ctaHeadline": "Ready to Begin Your Journey?",
-    "ctaParagraph": "Whether you're just exploring or ready to take the next step, IVFertility is here to walk beside you. Schedule your free consultation today and begin the journey toward growing your family.",
-    "ctaButtonLabel": "Schedule Your Free Consultation"
-  },
-  "services": {
-    "title1": "Frequently Asked",
-    "title2": "Questions",
-    "paragraph": "Every path to parenthood is deeply personal, and every decision you make is a meaningful step toward the future you dream of."
-  },
-  "faq": {
-    "seoTitle": "Surrogacy & IVF FAQs | IVFertilityGeorgia",
-    "seoDescription": "Find answers to the most common questions about surrogacy, egg donation, IVF treatment, legal regulations, costs, and how to start your journey with us in Georgia.",
-    "ogImageAlt": "Couple asking questions about surrogacy and IVF at fertility clinic in Georgia",
-
-    "q1": {
-      "question": "Can I meet my surrogate partner before the process begins?",
-      "answer": "You're warmly invited to visit us and meet our dedicated team. During your visit, you'll have the opportunity to tour our modern facilities, consult with our specialists, and explore how we can support your journey to parenthood."
-    },
-    "q2": {
-      "question": "I'm ready to begin my journey. What is the first step?",
-      "answer": "If you'd prefer to start from the comfort of your home, simply fill out our online inquiry form. This helps us understand your goals and questions, and a member of our team will reach out promptly to guide you forward."
-    },
-    "q3": {
-      "question": "What screenings are required to qualify as an egg donor?",
-      "answer": "Our egg donors go through a comprehensive evaluation, including medical, genetic, and psychological screenings, to ensure they meet the highest standards of health and eligibility."
-    },
-    "q4": {
-      "question": "What exactly is the guarantee program everyone talks about?",
-      "answer": "Our guarantee program is designed to provide you with peace of mind, both financially and emotionally. It ensures that if multiple attempts are needed, you're still fully supported throughout the journey, without unexpected costs."
-    },
-    "q5": {
-      "question": "I'm HIV positive and hopeful. Is surrogacy still an option for me?",
-      "answer": "Yes, absolutely. With proper medical protocols in place, many HIV positive individuals successfully pursue parenthood through surrogacy. Our team will guide you through every step with discretion and care."
-    },
-    "q6": {
-      "question": "How are surrogates screened before being approved?",
-      "answer": "Surrogates go through rigorous medical, psychological, and background screenings to ensure they are fully prepared, both physically and emotionally, for the journey ahead."
-    },
-    "q7": {
-      "question": "How long does it take to be matched with a surrogate?",
-      "answer": "Wait times can vary depending on your preferences and specific needs, but on average, intended parents are matched within a few weeks to a couple of months."
-    },
-    "q8": {
-      "question": "From day one, how long does the full surrogacy process take?",
-      "answer": "If everything goes smoothly, the process generally takes between 12 to 18 months, from initial consultation to holding your baby in your arms."
-    },
-    "q9": {
-      "question": "I'm single. Can I still pursue surrogacy?",
-      "answer": "Yes, of course. We proudly support individuals of all backgrounds, including single parents, in building the family they dream of."
-    },
-    "q10": {
-      "question": "What should I expect in terms of surrogacy costs?",
-      "answer": "Surrogacy is a significant investment, and costs can vary based on your chosen package and services. We provide full transparency with no hidden fees, so you can plan confidently from the start."
-    },
-    "q11": {
-      "question": "Can I meet my egg donor before we move forward with a match?",
-      "answer": "Yes, in many cases, we can arrange a meeting with your potential egg donor. We believe that comfort and trust are essential in this journey, and we're here to support your preferences."
-    },
-    "q12": {
-      "question": "Which countries are considered surrogacy friendly?",
-      "answer": "Countries like Georgia, the United States, Ukraine (under certain conditions), and Canada are known for having established legal frameworks supporting ethical surrogacy. Our team can advise you based on your citizenship and personal situation."
-    }
-  },
-
-  "clinic": {
-    "visitTitle": "Visit Our Clinic",
-    "visitText": "We warmly welcome you to visit our clinic and meet the passionate team behind IVFertility. During your visit, you’ll have the opportunity to explore our state-of-the-art facilities, speak directly with our experts, and learn more about how we can support your journey to parenthood.",
-    "onlineTitle": "Online Inquiry",
-    "onlineText": "Prefer to begin from the comfort of your home? Simply fill out our online inquiry form. Share your questions and details with us, and one of our dedicated coordinators will promptly get in touch to guide you through your next steps."
-  },
-  "sliderImage": {
-    "title": "Eleanor Pena",
-    "subtitle": "Proffesional Athlete",
-    "description": "Growing Families is a Charity which  works with intended parents, Heterosexual and Singles around the globe to educate and support their familty building journey with donors and surrogates. Formetly Families"
   },
   "footer": {
-    "copyright": "© 2025 IVFertilityGeorgia. All rights reserved."
-  },
+    "description": "For over 20 years, guiding intended parents through IVF, surrogacy, and egg donation programs in Georgia with medical precision and personal care.",
 
-  "registerPage": {
-    "register-title": "The Power of Surrogacy & Egg Donation",
-    "register-paragraph": " If you're looking for an emotional and meaningful path to  parenthood, surrogacy and egg donation can be life-changing steps. This beautiful journey allows dreams to come true, bringing the joy of new life into the world.",
-    "register-secParagraph": " Fill out the form and let&apos;s turn your dream into reality! 💙",
-    "register-button": "Register Now"
+    "contact": {
+      "email": "info@familywayinternational.com",
+      "phone": "+995 575 757 535",
+      "location": "Tbilisi, Georgia"
+    },
+
+    "programs": {
+      "title": "Programs",
+      "about": "About",
+      "services": "Services",
+      "team": "Our Team",
+      "law": "Law",
+      "faq": "FAQ"
+    },
+
+    "resources": {
+      "title": "Resources",
+      "faq": "FAQ",
+      "pricing": "Costs and Pricing",
+      "georgia": "Georgia as a Destination",
+      "guide": "First Steps Guide",
+      "privacy": "Privacy Policy"
+    },
+
+    "bottom": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy"
+    },
+
+    "copyright": "© 2026 FamilyWay International. All rights reserved."
+  },
+  "faq": {
+    "meta": {
+      "tag": "Patient Information",
+      "heroTitle1": "Every question",
+      "heroTitle2": "you carry,",
+      "heroTitleEm": "answered here.",
+      "heroSub": "We have gathered the questions most often raised by intended parents and provided clear, thorough answers  so you can move forward with complete confidence and clarity.",
+      "statQuestions": "Questions covered",
+      "statAreas": "Program areas",
+      "statVisa": "Visa-free stay",
+      "navContact": "Contact Us",
+      "logoName": "NewLife Georgia",
+      "contactHeading1": "Still have a question",
+      "contactHeading2": "that is",
+      "contactHeadingEm": "not listed here?",
+      "contactSub": "Our coordinators are available to speak with you directly and guide you through every aspect of the process at your own pace.",
+      "btnEmail": "Contact US",
+      "btnCall": "Or call our clinic"
+    },
+    "sections": [
+      {
+        "sectionId": "I",
+        "sectionTitle": "Surrogate Selection & Matching",
+        "items": [
+          {
+            "question": "Who decides which surrogate is matched to our family?",
+            "answer": "The matching process is directed by our lead IVF physician, whose primary responsibility is to ensure every surrogate entering the program meets strict clinical standards before any introduction is made. Roughly two weeks prior to the preparation cycle, your personal coordinator will send you a full surrogate dossier  covering health records, personal background, photographs, and screening outcomes  so that the final decision rests entirely with you. On rare occasions, medical circumstances during the preparation phase  including suboptimal endometrial development, unexpected bleeding, or timing misalignment with the egg donor  may require a change of surrogate. You will always be the first to know, and a complete profile of the alternative candidate will be provided without delay."
+          },
+          {
+            "question": "What happens if our first transfer cycle does not result in pregnancy?",
+            "answer": "A single program enrollment includes up to three embryo transfer attempts within the agency fee. If cryopreserved embryos remain from your first cycle, the second transfer is arranged at a fixed preparation cost of approximately USD 3,200  no repeat agency charge applies. Where a new fresh cycle is necessary, the cost structure is determined by your program tier, but the agency fee continues to be waived for any subsequent attempt within the three-cycle period. You pay only for the clinical and preparation costs directly incurred."
+          }
+        ]
+      },
+      {
+        "sectionId": "II",
+        "sectionTitle": "Treatment Pathways",
+        "items": [
+          {
+            "question": "How does a gestational surrogacy program with an egg donor work from start to finish?",
+            "answer": "After your initial inquiry, a scheduling consultation is arranged to align your availability with our treatment calendar. You are then given secure private access to our egg donor registry, where each profile includes comprehensive medical and genetic history, educational background, professional details, prior donation outcomes, and photographs. Once your selection is made, identity verification is completed, the agreement is executed digitally, and your first program payment is processed. Donor screening is then completed in full before preparations begin. You will need to be present in Georgia for approximately five days around the egg retrieval  the precise date is confirmed as the stimulation cycle progresses. Embryos are ordinarily transferred on day three; extended blastocyst culture to day five is available by arrangement. A serum HCG test is conducted fourteen to sixteen days following transfer, with results issued the same day."
+          },
+          {
+            "question": "How is the surrogacy program structured when the intended mother provides her own eggs?",
+            "answer": "Intended mothers have two options. The first is to begin ovarian stimulation with their local fertility clinic and travel to Georgia on stimulation day eight or nine, with an in-country stay of approximately six days for monitoring, trigger injection, and egg retrieval. The second is to complete the full stimulation protocol at our clinic in Georgia, which requires a stay of around seventeen days. In both cases, our physician must review your pre-cycle medical workup and confirm suitability before the program opens. If you are stimulating locally, detailed follicle monitoring reports are required on days five and eight; on day nine, our team takes over to finalise the trigger schedule and lock in the retrieval appointment."
+          },
+          {
+            "question": "What is involved in the IVF with egg donation program when the intended mother carries the pregnancy?",
+            "answer": "Once preferred dates are agreed and database access is granted, the intended mother selects an egg donor whose profile aligns with her own preferences and medical considerations. A complete pre-treatment screening must then be submitted for review by our IVF physician, who confirms clinical eligibility before the contract is issued. Following enrollment and the initial payment, the intended mother and donor are placed on a synchronised preparation protocol. The intended mother may complete her endometrial preparation at a local clinic and travel to Georgia only for the embryo transfer, or she may choose to have the full preparation conducted with us."
+          },
+          {
+            "question": "How does the frozen embryo surrogacy program work?",
+            "answer": "Intended parents are responsible for coordinating the shipment of their frozen embryos to our laboratory. The originating facility must provide a formal documentation package including embryo count, straw configuration, individual embryo developmental grades, cryopreservation date, the method of freezing used, and current infectious disease screening results for both partners. Upon confirmed receipt, contracts are formalised and signed. Once the initial payment is received, surrogate preparation begins immediately. The number of embryos to be transferred is agreed with you in advance of the thaw cycle."
+          }
+        ]
+      },
+      {
+        "sectionId": "III",
+        "sectionTitle": "Pregnancy Care",
+        "items": [
+          {
+            "question": "What ongoing support is provided once pregnancy is confirmed?",
+            "answer": "From the moment pregnancy is confirmed through a positive HCG blood result, your case moves into the care of a dedicated pregnancy coordinator. She acts as your central point of contact throughout the full term, providing structured clinical updates, forwarding ultrasound images and reports at each milestone, and remaining available to address any concerns you may raise at any stage. You are welcome to travel to Georgia at any point during the pregnancy to visit your surrogate, and we will facilitate whatever communication arrangement  video calls, written updates, or in-person meetings  works best for your family."
+          },
+          {
+            "question": "How is a pregnancy loss managed within the program?",
+            "answer": "A clinical pregnancy is formally recognised from the point at which a foetal heartbeat is confirmed via ultrasound. Should the initial HCG result be positive but the first scan fail to detect a heartbeat, the outcome is not classified as a pregnancy loss  the next transfer attempt proceeds at no additional agency cost, within the three-cycle coverage period. In the event that cardiac activity has previously been confirmed and foetal development subsequently ceases, this constitutes a clinical pregnancy loss. A new program enrollment is then required, and the applicable program fee becomes payable. The surrogate's compensation at each defined stage of the pregnancy is set out in full within the signed agreement."
+          }
+        ]
+      },
+      {
+        "sectionId": "IV",
+        "sectionTitle": "Donors, Travel & Logistics",
+        "items": [
+          {
+            "question": "Can the clinic guarantee how many eggs will be retrieved from the donor?",
+            "answer": "A specific egg yield cannot be guaranteed prior to the retrieval procedure  follicular response to stimulation is a biological variable that no clinic can predict with certainty. What we are able to offer is an Antral Follicle Count ultrasound for your selected donor, performed before the cycle commences. This assessment provides a clinically meaningful estimate of ovarian reserve across both ovaries and the anticipated number of mature follicles. It is the most reliable indicator available at this stage, and our medical team will walk you through the findings and what they mean in the context of your specific cycle and transfer plan."
+          },
+          {
+            "question": "How many times will we need to travel to Georgia for the full program?",
+            "answer": "For most intended parents, two visits are sufficient: one for sperm provision or egg retrieval, and one to return home with your child. If attending in person during the fertilisation phase is not possible, cryopreserved sperm samples may be shipped to our laboratory ahead of time and used for the IVF procedure. Parents in the frozen embryo program have the option to grant our staff a limited Power of Attorney, allowing our team to act on your behalf during the transfer cycle. Once the notarised and officially authenticated document is received, a single visit to Georgia  to collect your baby  is all that is required."
+          },
+          {
+            "question": "Which nationalities can enter Georgia without a visa?",
+            "answer": "Citizens of all European Union member states, the United States, Canada, Australia, New Zealand, Japan, South Korea, Israel, Switzerland, Norway, Iceland, Liechtenstein, Andorra, San Marino, Singapore, Turkey, Iran, Kuwait, Qatar, Bahrain, the United Arab Emirates, Oman, and the majority of CIS countries (with the exception of Russia) may enter Georgia without a visa for stays of up to 360 days. An entry permit is issued directly at the point of arrival  no prior application is required. Citizens of countries outside this list may obtain a visa through a Georgian Embassy or Consulate in their country of residence, or apply for one upon arrival at an official air or land border entry point."
+          }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "pageTitle": "Contact FamilyWay International | IVF Clinic in Tbilisi, Georgia",
+    "pageDescription": "Get in touch with FamilyWay International in Tbilisi, Georgia. Schedule a free fertility consultation, ask a question, or plan your visit.",
+    "hero": {
+      "heading": "Get in Touch",
+      "subheading": "We are here to listen, answer your questions, and help you take the first step on your fertility journey."
+    },
+    "info": {
+      "visitUs": {
+        "title": "Visit Us",
+        "line1": "12 Rustaveli Avenue",
+        "line2": "Tbilisi 0108, Georgia"
+      },
+      "callUs": {
+        "title": "Call Us",
+        "line1": "+995 322 000 000",
+        "line2": "+995 555 000 000 (WhatsApp)"
+      },
+      "emailUs": {
+        "title": "Email Us",
+        "line1": "info@familyway.ge",
+        "line2": "patients@familyway.ge"
+      },
+      "workingHours": {
+        "title": "Working Hours",
+        "line1": "Mon – Fri: 9:00 – 18:00",
+        "line2": "Sat: 10:00 – 14:00"
+      }
+    },
+    "form": {
+      "heading": "Send Us a Message",
+      "subheading": "Fill out the form below and a member of our team will respond within 24 hours. All inquiries are treated with complete confidentiality.",
+      "fullName": "Full Name",
+      "emailAddress": "Email Address",
+      "phoneNumber": "Phone / WhatsApp",
+      "interestedIn": "I'm interested in",
+      "selectService": "Select a service",
+      "services": {
+        "ivf": "IVF Treatment",
+        "surrogacy": "Surrogacy Program",
+        "eggDonation": "Egg Donation",
+        "consultation": "General Consultation",
+        "legal": "Legal Inquiry",
+        "other": "Other"
+      },
+      "country": "Country of Residence",
+      "message": "Your Message",
+      "messagePlaceholder": "Tell us about your situation, questions, or how we can help...",
+      "privacy": "By submitting this form, you agree to our privacy policy. Your information will remain confidential and will only be used to respond to your inquiry.",
+      "submit": "Send Message",
+      "required": "*",
+      "fieldRequired": "This field is required.",
+      "genericError": "Something went wrong. Please try again."
+    },
+    "success": {
+      "heading": "Thank You",
+      "body": "Your message has been received. Our team will be in touch shortly."
+    },
+    "toast": {
+      "title": "Message Sent",
+      "description": "Thank you for reaching out. We will respond within 24 hours."
+    },
+    "talk": {
+      "heading": "Prefer to Talk?",
+      "body": "If you would rather speak with someone directly, our international patient coordinators are available for phone and video consultations in English, Georgian, Russian, French, Spanish, and German.",
+      "whatsapp": "Chat on WhatsApp",
+      "phone": "+995 575 757 535"
+    },
+    "map": {
+      "title": "FamilyWay International clinic location in Tbilisi, Georgia"
+    }
   }
 }

@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
-import logo from "@/../public/assets/logo/logo.png";
+import logo from "@/../public/assets/images/logo/logo.png";
 import Image from "next/image";
 import LanguageSwitcher from "@/components/language-switcher/LanguageSwitcher";
 import DesktopNav from "@/components/header/DesktopNav";

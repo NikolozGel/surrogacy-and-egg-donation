@@ -6,15 +6,15 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import EnglishFlag from "@/../public/assets/flags/english-flag.svg";
-import RussianFlag from "@/../public/assets/flags/russian-flag.svg";
+import EnglishFlag from "@/../public/assets/images/flags/english-flag.svg";
+import RussianFlag from "@/../public/assets/images/flags/russian-flag.svg";
 
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
 import Image, { StaticImageData } from "next/image";
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
-import { motion } from "framer-motion"; // <-- დაამატე ეს
+import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 type LanguageCode = "en" | "ru";

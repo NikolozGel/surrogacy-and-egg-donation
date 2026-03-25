@@ -1,6 +1,6 @@
 import ContactCTA from "@/components/contact-CTA/ContactCta";
 import PathToParenthood from "@/components/path-to-parenthood/PathToParenthood";
-import ProgramSections from "@/components/sections copy/ProgramSections";
+import ProgramSections from "@/components/sections/ProgramSections";
 import Slider from "@/components/slider/Slider";
 import { getTranslations } from "next-intl/server";
 
@@ -46,9 +46,7 @@ export async function generateMetadata(props: {
       canonical: url,
       languages: {
         en: `${baseUrl}/en`,
-        ka: `${baseUrl}/ka`,
         ru: `${baseUrl}/ru`,
-        zh: `${baseUrl}/zh`,
       },
     },
     robots: {

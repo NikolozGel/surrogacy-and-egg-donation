@@ -5,16 +5,12 @@ export async function POST(req: NextRequest) {
   try {
     const data = await req.json();
 
-    // ✅ Connect to MongoDB
     const client = new MongoClient(process.env.MONGODB_URI as string);
     await client.connect();
     const db = client.db("suroggacy-and-egg-donation");
     const collection = db.collection("surrogacy");
     await collection.insertOne(data);
 
-    // ✅ Send emails asynchronously (don’t block the response)
-
-    // ✅ Return response immediately
     return NextResponse.json({
       success: true,
       message: "Form submitted successfully!",
@@ -23,7 +19,7 @@ export async function POST(req: NextRequest) {
     console.error("Error processing request:", error);
     return NextResponse.json(
       { success: false, message: "Something went wrong!" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

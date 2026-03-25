@@ -5,9 +5,6 @@ import nodemailer from "nodemailer";
 export async function POST(req: NextRequest) {
   try {
     const formData = await req.json();
-    // console.log("Received data:", formData);
-    // console.log("email", formData.email);
-    // MongoDB კავშირი
     const client = new MongoClient(process.env.MONGODB_URI as string);
     await client.connect();
     const database = client.db("suroggacy-and-egg-donation");
@@ -15,7 +12,6 @@ export async function POST(req: NextRequest) {
 
     await collection.insertOne(formData);
 
-    // Nodemailer კონფიგურაცია
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
@@ -24,7 +20,6 @@ export async function POST(req: NextRequest) {
       },
     });
 
-    // ელფოსტის გაგზავნა ჩემთვის
     const mailForMe = {
       from: `${formData.name}<${formData.email}>`,
       to: "nikolozgelenidze9@gmail.com",
@@ -33,7 +28,6 @@ export async function POST(req: NextRequest) {
     };
     await transporter.sendMail(mailForMe);
 
-    // ელფოსტის გაგზავნა მომხმარებლისთვის
     const mailForUser = {
       from: `nikolozgelenidze9@gmail.com`,
       to: `${formData.email}`,
@@ -44,13 +38,13 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json(
       { message: "Data saved and email sent successfully!" },
-      { status: 201 }
+      { status: 201 },
     );
   } catch (error) {
     console.error("Error processing request:", error);
     return NextResponse.json(
       { message: "Something went wrong!" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

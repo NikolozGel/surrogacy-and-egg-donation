@@ -1,8 +1,8 @@
 "use client";
 import { Carousel } from "antd";
 import Image from "next/image";
-import baby from "@/../public/assets/babies/baby-1.jpg";
-import family from "@/../public/assets/babies/baby.jpg";
+import baby from "@/../public/assets/images/babies/baby-1.jpg";
+import family from "@/../public/assets/images/babies/baby.jpg";
 import SurrogacyAndEggDonationOptions from "@/components/surrogacy/SurrogacyOptions";
 
 const images = [
