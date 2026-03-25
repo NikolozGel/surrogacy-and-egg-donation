@@ -364,5 +364,78 @@
     "map": {
       "title": "FamilyWay International clinic location in Tbilisi, Georgia"
     }
+  },
+  "law": {
+    "keyPoints": [
+      {
+        "title": "Legally Recognized",
+        "text": "Surrogacy is fully regulated under Articles 143 and 144 of Georgia's Civil Code, providing clear legal standing for intended parents."
+      },
+      {
+        "title": "Birth Certificate Rights",
+        "text": "Intended parents are named directly on the birth certificate — no adoption or court order required."
+      },
+      {
+        "title": "Surrogate Protections",
+        "text": "Georgian law mandates health coverage, fair compensation, and independent legal representation for surrogates."
+      },
+      {
+        "title": "International Accessibility",
+        "text": "Georgia's legislation specifically accommodates international intended parents, making it one of the most accessible surrogacy jurisdictions globally."
+      }
+    ],
+    "legalProcess": {
+      "heading": "Understanding the Legal Process",
+      "topics": [
+        {
+          "question": "Who is eligible for surrogacy in Georgia?",
+          "answer": "Under Georgian law, surrogacy is available to heterosexual married couples who are unable to carry a pregnancy due to medical reasons. The intended mother must have a documented medical indication, confirmed by a licensed physician, that pregnancy would pose a significant health risk or is not medically possible. Both intended parents must be legally married, and this status must be verifiable through official documentation. Georgian law does not currently extend surrogacy to single individuals or same-sex couples."
+        },
+        {
+          "question": "How is parental rights established after surrogacy?",
+          "answer": "Georgia's Civil Code explicitly states that in gestational surrogacy, the intended parents are recognized as the legal parents from the moment of birth. The surrogate mother has no parental rights or obligations toward the child. The birth certificate is issued directly in the names of the intended parents, without any adoption process required. This legal clarity is one of the primary reasons Georgia is considered a favorable jurisdiction for international surrogacy."
+        },
+        {
+          "question": "What legal documentation is required?",
+          "answer": "A legally binding surrogacy agreement must be signed before the embryo transfer procedure. This contract outlines the rights and obligations of all parties, including financial terms, medical responsibilities, and post-delivery procedures. Additionally, intended parents must provide notarized copies of their marriage certificate, passport identification, and a medical report confirming the need for surrogacy. Our legal team prepares all contracts and ensures every document meets Georgian regulatory standards."
+        },
+        {
+          "question": "What are the legal protections for surrogates?",
+          "answer": "Georgian law protects surrogates by requiring comprehensive health insurance, fair compensation, and the right to independent legal counsel. Surrogacy contracts must include provisions for medical care during and after pregnancy. At FamilyWay, we go further by offering psychological support, regular wellness checks, and a dedicated coordinator who maintains ongoing communication with the surrogate throughout the process."
+        },
+        {
+          "question": "How does IVF-related law differ from surrogacy law?",
+          "answer": "IVF procedures in Georgia are regulated under the Law on Health Care, which permits the use of assisted reproductive technologies for all individuals, including single women. Egg donation and sperm donation are legally permitted, and donors have no parental rights. Embryo cryopreservation is also regulated, with clear guidelines on storage duration and consent. Unlike surrogacy, IVF treatment does not require the intended patient to be married."
+        },
+        {
+          "question": "What happens if intended parents are from another country?",
+          "answer": "International intended parents benefit from Georgia's straightforward legal process, but must also consider the laws of their home country regarding citizenship and entry of the child. Our legal team provides guidance on embassy requirements, travel documents, and any additional steps needed to ensure the child's legal status is recognized in the parents' country of residence. We recommend that international clients consult with a family law attorney in their home jurisdiction early in the process."
+        }
+      ]
+    },
+    "checklist": {
+      "heading": "Document Checklist",
+      "items": [
+        "Notarized copy of marriage certificate",
+        "Valid passport copies for both intended parents",
+        "Medical report confirming need for surrogacy",
+        "Signed surrogacy agreement (prepared by our legal team)",
+        "Power of attorney (for clients not present at delivery)",
+        "Embassy-specific documentation for child's travel documents",
+        "Notarized consent forms for IVF procedures",
+        "Insurance documentation for surrogate"
+      ],
+      "warning": {
+        "label": "Important:",
+        "text": "Legal requirements may vary depending on your country of residence. We strongly recommend scheduling a legal consultation before beginning the process."
+      }
+    },
+    "legalTeam": {
+      "heading": "Our Legal Team Works for You",
+      "paragraph1": "At FamilyWay International, you never have to navigate the legal process alone. Our in-house legal team has handled surrogacy and IVF agreements for families from over 40 countries. We prepare every contract, coordinate with local authorities, and liaise with your home country's embassy to ensure a smooth transition.",
+      "paragraph2": "We believe legal clarity is the foundation of trust. That is why we explain every clause, answer every question, and never rush the process. Your peace of mind matters as much as the medical outcome.",
+      "imageAlt": "Legal documents and contracts for surrogacy agreements in Georgia",
+      "cta": "Book a Consultation"
+    }
   }
 }
