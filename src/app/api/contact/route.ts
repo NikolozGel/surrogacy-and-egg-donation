@@ -33,6 +33,7 @@ export async function POST(req: NextRequest) {
     }
 
     const db = await getDb();
+    console.log("db: ", db.databaseName);
     const collection = db.collection("contacts");
     const doc = { ...parsed.data, createdAt: new Date() };
     await collection.insertOne(doc);

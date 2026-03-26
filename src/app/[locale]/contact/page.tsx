@@ -1,5 +1,4 @@
 "use client";
-
 import { useCallback, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -71,12 +70,6 @@ export default function Contact() {
     <main>
       <section className="relative overflow-hidden min-h-[40vh] flex items-center">
         <div className="absolute inset-0">
-          {/* <img
-            src={contactImage}
-            alt=""
-            className="w-full h-full object-cover"
-            aria-hidden="true"
-          /> */}
           <div className="absolute inset-0 bg-heading/70" />
         </div>
         <div className="relative container mx-auto px-4 lg:px-8 py-20 text-center">
@@ -107,7 +100,7 @@ export default function Contact() {
                   className="flex flex-col items-center justify-center py-12 space-y-4 bg-card rounded-2xl shadow-md"
                   data-testid="contact-success"
                 >
-                  <CheckCircle2 className="h-16 w-16 text-primary" />
+                  <CheckCircle2 className="h-16 w-16 text-sky-600" />
                   <h3 className="font-heading text-2xl font-bold text-gray-600 text-center">
                     {t("success.heading")}
                   </h3>
@@ -269,12 +262,6 @@ export default function Contact() {
               </div>
 
               <div className="bg-card rounded-2xl p-8 shadow-md">
-                {/* <div className="flex items-center gap-3 mb-4">
-                  <MessageSquare className="h-6 w-6 text-primary" />
-                  <h3 className="font-heading text-xl font-semibold text-gray-600">
-                    {t("talk.heading")}
-                  </h3>
-                </div> */}
                 <p className="font-body text-gray-600 leading-relaxed mb-6">
                   {t("talk.body")}
                 </p>
