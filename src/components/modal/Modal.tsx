@@ -94,37 +94,36 @@ export default function DialogDemo() {
               {t("descriptionSecond")}
             </p>
 
-            <form
-              onSubmit={handleSubmit(onSubmit)}
-              className="space-y-4"
-              noValidate
-            >
-              <Input
-                {...register("fullname")}
-                placeholder={t("fullName")}
-                className="h-12"
-                disabled={isSubmitting}
-              />
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-3">
               {errors.fullname && (
                 <p className="text-sm text-gray-800">{t("fieldRequired")}</p>
               )}
+              <Input
+                {...register("fullname")}
+                placeholder={t("fullName")}
+                className="h-12 border-gray-400"
+                disabled={isSubmitting}
+              />
 
+              {errors.email && (
+                <p className="text-sm text-gray-800">{t("fieldRequired")}</p>
+              )}
               <Input
                 type="email"
                 {...register("email")}
                 placeholder={t("email")}
-                className="h-12"
+                className="h-12 border-gray-400"
                 disabled={isSubmitting}
               />
-              {errors.email && (
+
+              {errors.country && (
                 <p className="text-sm text-gray-800">{t("fieldRequired")}</p>
               )}
-
               <Input
                 type="tel"
                 {...register("phone")}
                 placeholder={t("phone")}
-                className="h-12"
+                className="h-12 border-gray-400"
                 disabled={isSubmitting}
               />
               {errors.phone && (
@@ -134,22 +133,18 @@ export default function DialogDemo() {
               <Input
                 {...register("country")}
                 placeholder={t("country")}
-                className="h-12"
-                disabled={isSubmitting}
-              />
-              {errors.country && (
-                <p className="text-sm text-gray-800">{t("fieldRequired")}</p>
-              )}
-
-              <Input
-                {...register("message")}
-                placeholder={t("message")}
-                className="h-12"
+                className="h-12 border-gray-400"
                 disabled={isSubmitting}
               />
               {errors.message && (
                 <p className="text-sm text-gray-800">{t("fieldRequired")}</p>
               )}
+              <Input
+                {...register("message")}
+                placeholder={t("message")}
+                className="h-12 border-gray-400"
+                disabled={isSubmitting}
+              />
 
               {submitStatus === "error" && submitError && (
                 <p className="text-sm text-red-600 text-center">
@@ -159,7 +154,7 @@ export default function DialogDemo() {
 
               <button
                 type="submit"
-                className="h-12 px-8 bg-[#4287f5] rounded-full hover:opacity-70 text-white float-right flex items-center justify-center"
+                className="h-12 border-gray-400 cursor-pointer px-8 bg-[#4287f5] rounded-full cursor-po hover:opacity-70 text-white float-right flex items-center justify-center"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? (

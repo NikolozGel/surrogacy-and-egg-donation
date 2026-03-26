@@ -4,32 +4,34 @@ import Link from "next/link";
 import clinicInterior from "@/../public/assets/images/ivf/ivf-2.jpg";
 import motherBaby from "@/../public/assets/images/mother/mother.jpg";
 import embryoLab from "@/../public/assets/images/egg-donation/microscope.jpg";
+import { useLocale } from "next-intl";
 
 const services = [
   {
     title: "IVF Treatment",
     description:
       "Advanced in vitro fertilization with experienced specialists and high success rates.",
-    link: "/ivf",
+    link: "/services",
     image: clinicInterior,
   },
   {
     title: "Surrogacy Program",
     description:
       "Legal, safe, and fully managed gestational surrogacy programs in Georgia.",
-    link: "/surrogacy",
+    link: "/services",
     image: motherBaby,
   },
   {
     title: "Egg Donation",
     description:
       "Carefully screened donors matched to your preferences with comprehensive support.",
-    link: "/egg-donation",
+    link: "/services",
     image: embryoLab,
   },
 ];
 
 const ProgramSections = () => {
+  const locale = useLocale();
   return (
     <section className="w-full pt-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 lg:py-24">
@@ -41,7 +43,11 @@ const ProgramSections = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {services.map((s) => (
-            <Link key={s.title} href={s.link} className="group h-full">
+            <Link
+              key={s.title}
+              href={`${locale}/${s.link}`}
+              className="group h-full"
+            >
               <div className="bg-[#faf9f9] h-full overflow-hidden border border-[#d2c2c2] flex flex-col">
                 <div className="relative w-full h-48 sm:h-52 md:h-56 lg:h-60 overflow-hidden">
                   <Image

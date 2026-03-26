@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     icon: "/assets/logo/browser-tab-logo.png",
   },
   openGraph: {
-    title: "helping families grow",
+    title: "IVF Georgia",
     description: "infertility treatment",
     url: "https://ivfertilitygeorgia.com",
     siteName: "IVFertilityGeorgia",
@@ -63,7 +63,6 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body className={dmSans.className}>
-        {/* GTM main script */}
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=AW-17497597055"

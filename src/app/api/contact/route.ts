@@ -53,7 +53,7 @@ export async function POST(req: NextRequest) {
       from: process.env.EMAIL_USER,
       to: doc.email,
       subject: "We received your message",
-      text: `Hi ${doc.fullname}, we will contact you soon.`,
+      text: `Hi ${doc.fullname}, We'll contact you soon.`,
     });
 
     return NextResponse.json({ ok: true }, { status: 201 });
