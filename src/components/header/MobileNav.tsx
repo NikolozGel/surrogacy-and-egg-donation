@@ -48,7 +48,7 @@ const MobileNav = ({ mobileOpen, setMobileOpen }: Ibutton) => {
           </Link>
 
           <Link
-            href={`/${locale}/testimonials`}
+            href={`/${locale}/law`}
             onClick={() => setMobileOpen(false)}
             className="block px-3 py-2.5 rounded-md text-xl text-gray-600 hover:text-[#1E9BD7] font-medium"
           >
@@ -56,7 +56,7 @@ const MobileNav = ({ mobileOpen, setMobileOpen }: Ibutton) => {
           </Link>
 
           <Link
-            href={`/${locale}/legal`}
+            href={`/${locale}/faq`}
             onClick={() => setMobileOpen(false)}
             className="block px-3 py-2.5 rounded-md text-xl text-gray-600 hover:text-[#1E9BD7] font-medium"
           >

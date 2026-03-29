@@ -44,7 +44,7 @@ export default function Contact() {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(data),
         });
-
+        console.log(response);
         if (!response.ok) {
           let message = t("genericError");
           try {
