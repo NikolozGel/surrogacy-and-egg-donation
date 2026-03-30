@@ -31,17 +31,22 @@ export default function DialogDemo() {
 
   const isSubmitting = submitStatus === "loading";
 
+  const SUBMIT_TIMEOUT_MS = 10_000;
+
   const onSubmit = async (data: ContactFormData) => {
     setSubmitStatus("loading");
     setSubmitError(null);
+
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), SUBMIT_TIMEOUT_MS);
 
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
+        signal: controller.signal,
       });
-      console.log(response);
 
       if (!response.ok) {
         let message = t("genericError");
@@ -51,8 +56,8 @@ export default function DialogDemo() {
           if (errorBody?.message) {
             message = errorBody.message;
           }
-        } catch {
-          console.log(errors);
+        } catch (parseErr) {
+          console.error("Failed to parse error response:", parseErr);
         }
 
         setSubmitStatus("error");
@@ -63,10 +68,16 @@ export default function DialogDemo() {
       setSubmitStatus("success");
       reset();
     } catch (err) {
-      console.error("Contact form submission failed:", err);
+      if (err instanceof Error && err.name === "AbortError") {
+        setSubmitError(t("timeoutError"));
+      } else {
+        console.error("Contact form submission failed:", err);
+        setSubmitError(t("genericError"));
+      }
 
       setSubmitStatus("error");
-      setSubmitError(t("genericError"));
+    } finally {
+      clearTimeout(timeoutId);
     }
   };
 
@@ -156,7 +167,7 @@ export default function DialogDemo() {
 
               <button
                 type="submit"
-                className="h-12 border-gray-400 cursor-pointer px-8 mt-2 bg-[#4287f5] rounded-full cursor-po hover:opacity-70 text-white float-right flex items-center justify-center"
+                className="px-4 py-3 sm:px-4 sm:py-2.5 float-right mt-2.5 rounded-full bg-[#4287f5] hover:opacity-80 text-white cursor-pointer text-md lg:text-2xl font-semibold transition-all duration-300"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? (

@@ -97,7 +97,7 @@ export default function Contact() {
 
               {submitStatus === "success" ? (
                 <div
-                  className="flex flex-col items-center justify-center py-12 space-y-4 bg-card rounded-2xl shadow-md"
+                  className="flex flex-col items-center justify-center py-12 space-y-4 bg-card shadow-md"
                   data-testid="contact-success"
                 >
                   <CheckCircle2 className="h-16 w-16 text-sky-600" />
@@ -111,7 +111,7 @@ export default function Contact() {
               ) : (
                 <form
                   onSubmit={handleSubmit(onSubmit)}
-                  className="bg-card rounded-2xl p-8 shadow-md space-y-4"
+                  className="p-8 shadow-md space-y-4"
                   noValidate
                   data-testid="contact-form"
                 >
@@ -123,7 +123,7 @@ export default function Contact() {
                       id="fullname"
                       {...register("fullname")}
                       placeholder={t("form.fullName")}
-                      className="h-12 border-gray-600 text-gray-600 placeholder:text-gray-400 font-body"
+                      className="h-12 border-gray-500 text-gray-600 placeholder:text-gray-400 font-body"
                       disabled={isSubmitting}
                       aria-invalid={!!errors.fullname}
                       data-testid="fullname-input"
@@ -144,7 +144,7 @@ export default function Contact() {
                       type="email"
                       {...register("email")}
                       placeholder={t("form.emailAddress")}
-                      className="h-12 border-gray-600 text-gray-600 placeholder:text-gray-400 font-body"
+                      className="h-12 border-gray-500 text-gray-600 placeholder:text-gray-400 font-body"
                       disabled={isSubmitting}
                       aria-invalid={!!errors.email}
                       data-testid="email-input"
@@ -165,7 +165,7 @@ export default function Contact() {
                       type="tel"
                       {...register("phone")}
                       placeholder={t("form.phoneNumber")}
-                      className="h-12 border-gray-600 text-gray-600 placeholder:text-gray-400 font-body"
+                      className="h-12 border-gray-500 text-gray-600 placeholder:text-gray-400 font-body"
                       disabled={isSubmitting}
                       aria-invalid={!!errors.phone}
                       data-testid="phone-input"
@@ -185,7 +185,7 @@ export default function Contact() {
                       id="country"
                       {...register("country")}
                       placeholder={t("form.country")}
-                      className="h-12 border-gray-600 text-gray-600 placeholder:text-gray-400 font-body"
+                      className="h-12 border-gray-500 text-gray-600 placeholder:text-gray-400 font-body"
                       disabled={isSubmitting}
                       aria-invalid={!!errors.country}
                       data-testid="country-input"
@@ -206,7 +206,7 @@ export default function Contact() {
                       {...register("message")}
                       placeholder={t("form.messagePlaceholder")}
                       rows={5}
-                      className="w-full rounded-md border border-gray-600 bg-transparent px-3 py-2 text-sm text-gray-600 placeholder:text-gray-400 font-body resize-none focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+                      className="w-full border border-gray-400 px-3 py-2 text-sm text-gray-600 placeholder:text-gray-400 font-body resize-none focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
                       disabled={isSubmitting}
                       aria-invalid={!!errors.message}
                       data-testid="message-input"
@@ -248,7 +248,7 @@ export default function Contact() {
             </div>
 
             <div className="space-y-8">
-              <div className="rounded-2xl overflow-hidden shadow-md aspect-4/3">
+              <div className="overflow-hidden shadow-md aspect-4/3">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23826.97535687477!2d44.7767!3d41.7151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cd7e64f626b%3A0x61d084eed2576f38!2sTbilisi%2C%20Georgia!5e0!3m2!1sen!2s!4v1"
                   width="100%"
@@ -261,7 +261,7 @@ export default function Contact() {
                 />
               </div>
 
-              <div className="bg-card rounded-2xl p-8 shadow-md">
+              <div className="p-8 shadow-md">
                 <p className="font-body text-gray-600 leading-relaxed mb-6">
                   {t("talk.body")}
                 </p>

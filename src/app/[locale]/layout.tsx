@@ -112,7 +112,7 @@ export default async function LocaleLayout({
   if (!hasLocale(routing.locales, locale)) notFound();
 
   return (
-    <html lang={locale}>
+    <html lang="en">
       <body className={dmSans.className}>
         <Script
           async

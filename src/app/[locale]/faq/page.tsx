@@ -2,9 +2,7 @@
 
 import CustomModal from "@/components/modal/CostumModal";
 import DialogDemo from "@/components/modal/Modal";
-import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
 
 interface FAQItem {
   question: string;

@@ -38,7 +38,7 @@ export default function HowItWorksSection() {
 
       <CustomModal
         trigger={
-          <button className="my-10 p-2 sm:p-5 rounded-full bg-[#4287f5] hover:opacity-80 text-white cursor-pointer text-md lg:text-2xl">
+          <button className="px-4 py-3 sm:px-5 sm:py-4 rounded-full bg-[#4287f5] hover:opacity-80 text-white cursor-pointer text-md lg:text-2xl font-semibold transition-all duration-300 mt-14">
             {t("howItWorks.cta")}
           </button>
         }

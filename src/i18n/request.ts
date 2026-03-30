@@ -15,6 +15,6 @@ export default getRequestConfig(async ({ requestLocale }) => {
 
   return {
     locale,
-    messages: messagesMap[locale] || en, // fallback to 'en' if locale not found
+    messages: messagesMap[locale] || en,
   };
 });

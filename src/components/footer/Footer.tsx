@@ -91,12 +91,12 @@ export default function Footer() {
               <ul className="mt-6 flex flex-col gap-4">
                 {resources.map((item) => (
                   <li key={item.href}>
-                    <Link
-                      href={`/${locale}/${item.href}`}
+                    <span
+                      // href={`/${locale}/${item.href}`}
                       className="text-lg text-white/60 hover:text-white transition-all duration-300"
                     >
                       {item.label}
-                    </Link>
+                    </span>
                   </li>
                 ))}
               </ul>
