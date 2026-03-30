@@ -68,6 +68,7 @@ function MemberCard({ member }: { member: TeamMember }) {
         <Image
           src={member.image}
           alt={member.name}
+          quality={100}
           className="w-full h-full object-cover"
         />
       </div>

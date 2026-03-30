@@ -12,7 +12,7 @@ const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="overflow-hidden bg-white px-1 py-1 flex">
+    <header className="overflow-hidden bg-white px-1 py-1">
       <div className="container mx-auto flex items-center justify-between h-16 md:h-20 px-4 py-10">
         <Link href="/" className="pt-4">
           <Image src={logo} width={300} alt="logo" />

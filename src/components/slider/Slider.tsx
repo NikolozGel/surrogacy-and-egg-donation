@@ -20,7 +20,7 @@ export default function Slider() {
   return (
     <>
       <Carousel
-        className="custom-carousel bg-[#F1F5F9]"
+        className="custom-carousel bg-[#F1F5F9] overflow-hidden"
         arrows
         speed={1500}
         touchMove
@@ -29,14 +29,14 @@ export default function Slider() {
       >
         {images.map((image, index) => (
           <div
-            className="relative w-full h-[37vh] sm:h-[60vh] lg:h-[73vh] overflow-hidden"
+            className="relative w-full h-[37vh] sm:h-[60vh] lg:h-[73vh]"
             key={index}
           >
             <Image
               src={image.src}
               alt={image.alt}
               fill
-              quality={100}
+              quality={70}
               className="object-cover"
               sizes="100vw"
               priority

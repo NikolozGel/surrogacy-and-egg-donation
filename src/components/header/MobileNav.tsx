@@ -14,7 +14,7 @@ const MobileNav = ({ mobileOpen, setMobileOpen }: Ibutton) => {
   return (
     <>
       {mobileOpen && (
-        <nav className="lg:hidden px-4 py-4 flex flex-col gap-3">
+        <nav className="lg:hidden px-4 py-4 gap-3">
           <Link
             href={`/${locale}/`}
             onClick={() => setMobileOpen(false)}

@@ -14,10 +14,7 @@ export const contactFormSchema = z.object({
     .string()
     .min(1, "errorRequired")
     .min(2, "Country must be at least 2 characters"),
-  message: z
-    .string()
-    .min(1, "errorRequired")
-    .min(8, "Message must be at least 8 characters"),
+  message: z.string().min(1, "errorRequired"),
 });
 
 export type ContactFormData = z.infer<typeof contactFormSchema>;

@@ -2,8 +2,12 @@ import { getRequestConfig } from "next-intl/server";
 import { hasLocale } from "next-intl";
 import { routing } from "./routing";
 
+import en from "@/components/messages/en.json";
+import ru from "@/components/messages/ru.json";
+
+const messagesMap = { en, ru };
+
 export default getRequestConfig(async ({ requestLocale }) => {
-  // Typically corresponds to the `[locale]` segment
   const requested = await requestLocale;
   const locale = hasLocale(routing.locales, requested)
     ? requested
@@ -11,6 +15,6 @@ export default getRequestConfig(async ({ requestLocale }) => {
 
   return {
     locale,
-    messages: (await import(`@/messages/${locale}.json`)).default,
+    messages: messagesMap[locale] || en, // fallback to 'en' if locale not found
   };
 });

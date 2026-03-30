@@ -17,29 +17,80 @@ import Footer from "@/components/footer/Footer";
 export const queryClient = new QueryClient();
 
 export const metadata: Metadata = {
-  title: { default: "IVFertilityGeorgia", template: "%s | IVFertilityGeorgia" },
-  description: "ivfertility | in vitro fertilization center in georgia",
-  icons: {
-    icon: "/assets/logo/browser-tab-logo.png",
+  metadataBase: new URL("https://ivfertilitygeorgia.com"),
+
+  title: {
+    default:
+      "IVF in Georgia | Affordable IVF, Surrogacy & Egg Donation — IVFertilityGeorgia",
+    template: "%s | IVFertilityGeorgia",
   },
+
+  description:
+    "Start your journey to parenthood with IVFertilityGeorgia — a leading fertility clinic offering affordable IVF, surrogacy, and egg donation in Georgia. World-class care, transparent pricing, and proven results for families worldwide.",
+
+  keywords: [
+    "IVF in Georgia",
+    "affordable IVF abroad",
+    "surrogacy Georgia",
+    "egg donation Georgia",
+    "fertility clinic Georgia",
+    "IVF packages Georgia",
+    "international surrogacy",
+    "donor egg IVF",
+    "IVF cost Georgia",
+    "fertility treatment abroad",
+    "surrogacy agency Georgia",
+    "IVF success rates Georgia",
+    "IVF for foreigners Georgia",
+    "cheap IVF Europe",
+    "IVFertilityGeorgia",
+  ],
+
+  authors: [
+    { name: "IVFertilityGeorgia", url: "https://ivfertilitygeorgia.com" },
+  ],
+
+  category: "Healthcare / Fertility Treatment",
+
   openGraph: {
-    title: "IVF Georgia",
-    description: "infertility treatment",
+    title:
+      "IVF in Georgia | Affordable Surrogacy & Egg Donation — IVFertilityGeorgia",
+    description:
+      "World-class IVF, surrogacy, and egg donation services in Georgia. Transparent pricing, experienced specialists, and compassionate care for intended parents from the USA, UK, Europe, and Australia.",
     url: "https://ivfertilitygeorgia.com",
     siteName: "IVFertilityGeorgia",
-    images: [
-      {
-        url: "https://ivfertilitygeorgia.com/og/home.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Happy family after surrogacy",
-      },
-    ],
     locale: "en_US",
     type: "website",
   },
-  robots: { index: true, follow: true },
-  alternates: { canonical: "https://ivfertilitygeorgia.com/en" },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+
+  alternates: {
+    canonical: "https://ivfertilitygeorgia.com/en",
+    languages: {
+      en: "https://ivfertilitygeorgia.com/en",
+      // Add more as you expand:
+      ru: "https://ivfertilitygeorgia.com/ru",
+      // "de": "https://ivfertilitygeorgia.com/de",
+      "x-default": "https://ivfertilitygeorgia.com/en",
+    },
+  },
+
+  verification: {
+    google: "REPLACE_WITH_YOUR_GOOGLE_SITE_VERIFICATION_TOKEN",
+    // yandex: "REPLACE_IF_NEEDED",
+    // bing: "REPLACE_IF_NEEDED",
+  },
 };
 
 const dmSans = Titillium_Web({
@@ -75,6 +126,70 @@ export default async function LocaleLayout({
             gtag('config', 'AW-17497597055');
           `}
         </Script>
+
+        <Script
+          id="json-ld-medical-org"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "MedicalOrganization",
+              name: "IVFertilityGeorgia",
+              url: "https://ivfertilitygeorgia.com",
+              description:
+                "IVFertilityGeorgia is a leading fertility clinic in Georgia offering IVF, surrogacy, egg donation, and comprehensive fertility packages to international patients.",
+              address: {
+                "@type": "PostalAddress",
+                addressCountry: "GE",
+                addressLocality: "Tbilisi",
+              },
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+995575757535",
+                contactType: "customer support",
+                availableLanguage: ["English"],
+              },
+              sameAs: [
+                // Add your social media profile URLs here:
+                // "https://www.facebook.com/ivfertilitygeorgia",
+                // "https://www.instagram.com/ivfertilitygeorgia",
+              ],
+              medicalSpecialty: [
+                "In Vitro Fertilization",
+                "Reproductive Medicine",
+                "Surrogacy",
+                "Egg Donation",
+              ],
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "Fertility Services",
+                itemListElement: [
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "MedicalProcedure",
+                      name: "IVF Treatment",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "MedicalProcedure",
+                      name: "Egg Donation",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Surrogacy Program",
+                    },
+                  },
+                ],
+              },
+            }),
+          }}
+        />
 
         <NextIntlClientProvider>
           <Header />

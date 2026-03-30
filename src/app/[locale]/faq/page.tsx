@@ -1,5 +1,8 @@
 "use client";
 
+import CustomModal from "@/components/modal/CostumModal";
+import DialogDemo from "@/components/modal/Modal";
+import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
@@ -83,19 +86,15 @@ export default function FAQPage() {
           </div>
 
           <div className="flex flex-col items-start lg:items-end gap-3">
-            <Link
-              href="mailto:info@newlifegeorgia.com"
-              className="inline-block bg-[#1E9BD7] text-stone-100 text-xs uppercase tracking-widest font-medium px-7 py-4 rounded-sm hover:bg-[#8fb7c9]"
+            <CustomModal
+              trigger={
+                <button className="px-3 py-2 sm:px-4 sm:py-3 rounded-full tracking-tighter bg-[#4287f5] hover:opacity-80 text-white cursor-pointer text-md lg:text-2xl font-semibold transition-all duration-300">
+                  {meta.btnEmail}
+                </button>
+              }
             >
-              {meta.btnEmail}
-            </Link>
-
-            <Link
-              href="tel:+995575757535"
-              className="text-xs uppercase tracking-widest text-gray-600 hover:text-stone-700 font-medium border-b border-stone-300 pb-0.5 hover:border-stone-600"
-            >
-              {meta.btnCall}
-            </Link>
+              <DialogDemo />
+            </CustomModal>
           </div>
         </div>
       </section>

@@ -72,7 +72,7 @@ export default function DialogDemo() {
 
   return (
     <div>
-      <div className="p-10 bg-white">
+      <div className="p-4 sm:p-10 bg-white">
         {submitStatus === "success" ? (
           <div className="flex flex-col items-center justify-center py-12 space-y-4">
             <CheckCircle2 className="h-16 w-16 text-[#4287f5]" />
@@ -85,16 +85,18 @@ export default function DialogDemo() {
           </div>
         ) : (
           <>
-            <h3 className="text-3xl text-[#4287f5] mb-4">{t("title")}</h3>
+            <h3 className="text-xl sm:text-3xl text-gray-600 font-semibold mb-4">
+              {t("title")}
+            </h3>
 
-            <p className="text-base text-gray-600 mb-6">
+            <p className="text-lg sm:text-xl text-gray-600 mb-6">
               {t("description")}
               <br />
               <br />
               {t("descriptionSecond")}
             </p>
 
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-3">
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-3 mb-5">
               {errors.fullname && (
                 <p className="text-sm text-gray-800">{t("fieldRequired")}</p>
               )}
@@ -154,7 +156,7 @@ export default function DialogDemo() {
 
               <button
                 type="submit"
-                className="h-12 border-gray-400 cursor-pointer px-8 bg-[#4287f5] rounded-full cursor-po hover:opacity-70 text-white float-right flex items-center justify-center"
+                className="h-12 border-gray-400 cursor-pointer px-8 mt-2 bg-[#4287f5] rounded-full cursor-po hover:opacity-70 text-white float-right flex items-center justify-center"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? (

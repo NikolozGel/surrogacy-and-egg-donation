@@ -23,7 +23,7 @@ export default function ContactCTA() {
           <div className="mt-12 text-center">
             <CustomModal
               trigger={
-                <button className="py-4 text-xl px-9 cursor-pointer font-semibold rounded-full text-white bg-[#4287f5] hover:opacity-70">
+                <button className="px-4 py-3 sm:px-5 sm:py-4 rounded-full bg-[#4287f5] hover:opacity-80 text-white cursor-pointer text-md lg:text-2xl font-semibold transition-all duration-300">
                   {t("button")}
                 </button>
               }
