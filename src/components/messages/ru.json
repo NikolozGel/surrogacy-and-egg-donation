@@ -31,7 +31,8 @@
     "submit": "Отправить сообщение",
     "successTitle": "Сообщение отправлено!",
     "successMessage": "Спасибо, что написали нам. Мы скоро с вами свяжемся.",
-    "genericError": "Что-то пошло не так. Пожалуйста, попробуйте снова."
+    "genericError": "Что-то пошло не так. Пожалуйста, попробуйте снова.",
+    "timeoutError": "Error"
   },
   "ContactCta": {
     "badge": "FamilyWay International",

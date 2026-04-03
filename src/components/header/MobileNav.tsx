@@ -40,7 +40,7 @@ const MobileNav = ({ mobileOpen, setMobileOpen }: Ibutton) => {
           </Link>
 
           <Link
-            href={`/${locale}/team`}
+            href={`/${locale}/our-team`}
             onClick={() => setMobileOpen(false)}
             className="block px-3 py-2.5 rounded-md text-xl text-gray-600 hover:text-[#1E9BD7] font-medium"
           >

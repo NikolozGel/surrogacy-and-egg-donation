@@ -16,6 +16,7 @@ const clientPromise: Promise<MongoClient> =
 export async function getDb(): Promise<Db> {
   try {
     const client = await clientPromise;
+    console.log(client.db());
     return client.db();
   } catch (e) {
     console.error("MongoDB connection error:", e);
