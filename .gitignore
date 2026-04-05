@@ -13,6 +13,9 @@
 # testing
 /coverage
 
+#Ignore Google service account JSON
+service-account.json
+
 # next.js
 /.next/
 /out/
