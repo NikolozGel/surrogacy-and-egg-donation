@@ -82,104 +82,100 @@ export default function DialogDemo() {
   };
 
   return (
-    <div>
-      <div className="p-4 sm:p-10 bg-white">
-        {submitStatus === "success" ? (
-          <div className="flex flex-col items-center justify-center py-12 space-y-4">
-            <CheckCircle2 className="h-16 w-16 text-[#4287f5]" />
-            <h3 className="text-3xl text-[#4287f5] text-center">
-              {t("successTitle")}
-            </h3>
-            <p className="text-base text-gray-600 text-center max-w-md">
-              {t("successMessage")}
-            </p>
-          </div>
-        ) : (
-          <>
-            <h3 className="text-xl sm:text-3xl text-gray-600 font-semibold mb-4">
-              {t("title")}
-            </h3>
+    <div className="p-4 sm:p-10 bg-white">
+      {submitStatus === "success" ? (
+        <div className="flex flex-col items-center justify-center py-12 space-y-4">
+          <CheckCircle2 className="h-16 w-16 text-[#4287f5]" />
+          <h3 className="text-3xl text-[#4287f5] text-center">
+            {t("successTitle")}
+          </h3>
+          <p className="text-base text-gray-600 text-center max-w-md">
+            {t("successMessage")}
+          </p>
+        </div>
+      ) : (
+        <>
+          <h3 className="text-xl sm:text-3xl text-gray-600 font-semibold mb-4">
+            {t("title")}
+          </h3>
 
-            <p className="text-lg sm:text-xl text-gray-600 mb-6">
-              {t("description")}
-              <br />
-              <br />
-              {t("descriptionSecond")}
-            </p>
+          <p className="text-lg sm:text-xl text-gray-600 mb-6">
+            {t("description")}
+            <br />
+            <br />
+            {t("descriptionSecond")}
+          </p>
 
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-3 mb-5">
-              {errors.fullname && (
-                <p className="text-sm text-gray-800">{t("fieldRequired")}</p>
+          <form onSubmit={handleSubmit(onSubmit)} className="space-y-3 mb-5">
+            {errors.fullname && (
+              <p className="text-sm text-gray-800">{t("fieldRequired")}</p>
+            )}
+            <Input
+              {...register("fullname")}
+              placeholder={t("fullName")}
+              className="h-12 border-gray-400"
+              disabled={isSubmitting}
+            />
+
+            {errors.email && (
+              <p className="text-sm text-gray-800">{t("fieldRequired")}</p>
+            )}
+            <Input
+              type="email"
+              {...register("email")}
+              placeholder={t("email")}
+              className="h-12 border-gray-400"
+              disabled={isSubmitting}
+            />
+
+            {errors.country && (
+              <p className="text-sm text-gray-800">{t("fieldRequired")}</p>
+            )}
+            <Input
+              type="tel"
+              {...register("phone")}
+              placeholder={t("phone")}
+              className="h-12 border-gray-400"
+              disabled={isSubmitting}
+            />
+            {errors.phone && (
+              <p className="text-sm text-gray-800">{t("fieldRequired")}</p>
+            )}
+
+            <Input
+              {...register("country")}
+              placeholder={t("country")}
+              className="h-12 border-gray-400"
+              disabled={isSubmitting}
+            />
+            {errors.message && (
+              <p className="text-sm text-gray-800">{t("fieldRequired")}</p>
+            )}
+            <Input
+              {...register("message")}
+              placeholder={t("message")}
+              className="h-12 border-gray-400"
+              disabled={isSubmitting}
+            />
+
+            {submitStatus === "error" && submitError && (
+              <p className="text-sm text-red-600 text-center">{submitError}</p>
+            )}
+
+            <button
+              type="submit"
+              className="px-4 py-3 sm:px-4 sm:py-2.5 float-right mt-2.5 rounded-full bg-[#4287f5] hover:opacity-80 text-white cursor-pointer text-md lg:text-2xl font-semibold transition-all duration-300"
+              disabled={isSubmitting}
+            >
+              {isSubmitting ? (
+                <Loader2 className="h-4 w-4 animate-spin" />
+              ) : (
+                t("submit")
               )}
-              <Input
-                {...register("fullname")}
-                placeholder={t("fullName")}
-                className="h-12 border-gray-400"
-                disabled={isSubmitting}
-              />
-
-              {errors.email && (
-                <p className="text-sm text-gray-800">{t("fieldRequired")}</p>
-              )}
-              <Input
-                type="email"
-                {...register("email")}
-                placeholder={t("email")}
-                className="h-12 border-gray-400"
-                disabled={isSubmitting}
-              />
-
-              {errors.country && (
-                <p className="text-sm text-gray-800">{t("fieldRequired")}</p>
-              )}
-              <Input
-                type="tel"
-                {...register("phone")}
-                placeholder={t("phone")}
-                className="h-12 border-gray-400"
-                disabled={isSubmitting}
-              />
-              {errors.phone && (
-                <p className="text-sm text-gray-800">{t("fieldRequired")}</p>
-              )}
-
-              <Input
-                {...register("country")}
-                placeholder={t("country")}
-                className="h-12 border-gray-400"
-                disabled={isSubmitting}
-              />
-              {errors.message && (
-                <p className="text-sm text-gray-800">{t("fieldRequired")}</p>
-              )}
-              <Input
-                {...register("message")}
-                placeholder={t("message")}
-                className="h-12 border-gray-400"
-                disabled={isSubmitting}
-              />
-
-              {submitStatus === "error" && submitError && (
-                <p className="text-sm text-red-600 text-center">
-                  {submitError}
-                </p>
-              )}
-
-              <button
-                type="submit"
-                className="px-4 py-3 sm:px-4 sm:py-2.5 float-right mt-2.5 rounded-full bg-[#4287f5] hover:opacity-80 text-white cursor-pointer text-md lg:text-2xl font-semibold transition-all duration-300"
-                disabled={isSubmitting}
-              >
-                {isSubmitting ? (
-                  <Loader2 className="h-4 w-4 animate-spin" />
-                ) : (
-                  t("submit")
-                )}
-              </button>
-            </form>
-          </>
-        )}
-      </div>
+            </button>
+          </form>
+        </>
+      )}
     </div>
   );
 }

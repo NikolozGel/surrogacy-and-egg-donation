@@ -3,11 +3,13 @@ import { google } from "googleapis";
 import nodemailer from "nodemailer";
 import { contactSchema } from "@/../src/lib/schemas";
 import { ContactFormData } from "@/components/modal/ValidationSchema";
-import credentials from "@/../service.account.json";
 
 // Google Sheets setup
 const auth = new google.auth.GoogleAuth({
-  credentials,
+  credentials: {
+    client_email: process.env.CLIENTEMAIL,
+    private_key: process.env.PRIVATEKEY?.replace(/\\n/g, "\n"),
+  },
   scopes: ["https://www.googleapis.com/auth/spreadsheets"],
 });
 const sheets = google.sheets({ version: "v4", auth });
