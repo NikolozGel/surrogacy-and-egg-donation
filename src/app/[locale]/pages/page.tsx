@@ -53,6 +53,7 @@ export default function Register() {
         throw new Error("Failed to save data");
       }
     } catch (error) {
+      console.error(error);
       setLoading(false);
     }
   };
