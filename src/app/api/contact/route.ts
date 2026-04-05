@@ -2,8 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { google } from "googleapis";
 import nodemailer from "nodemailer";
 import { contactSchema } from "@/../src/lib/schemas";
+import { ContactFormData } from "@/components/modal/ValidationSchema";
 
-// Google Sheets setup
 const auth = new google.auth.GoogleAuth({
   credentials: {
     client_email: process.env.CLIENTEMAIL,
@@ -14,11 +14,10 @@ const auth = new google.auth.GoogleAuth({
 const sheets = google.sheets({ version: "v4", auth });
 const SPREADSHEET_ID = process.env.SPREADSHEET_ID;
 
-// ჩაწერა Google Sheet-ში
-async function saveLeadToSheet(doc: any) {
+async function saveLeadToSheet(doc: ContactFormData) {
   await sheets.spreadsheets.values.append({
     spreadsheetId: SPREADSHEET_ID,
-    range: "Leads!A:E", // შენი Sheet-ის კოლონები: fullname,email,phone,country,message
+    range: "Leads!A:E",
     valueInputOption: "RAW",
     requestBody: {
       values: [[doc.fullname, doc.email, doc.phone, doc.country, doc.message]],
@@ -49,16 +48,13 @@ export async function POST(req: NextRequest) {
 
     const doc = { ...parsed.data, createdAt: new Date() };
 
-    // 1️⃣ Google Sheets-ში ჩაწერა
     await saveLeadToSheet(doc);
 
-    // 2️⃣ Nodemailer
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: { user: process.env.EMAIL_USER, pass: process.env.EMAIL_PASS },
     });
 
-    // შენთვის
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: process.env.EMAIL_USER,
@@ -66,7 +62,6 @@ export async function POST(req: NextRequest) {
       text: `Name: ${doc.fullname}\nEmail: ${doc.email}\nPhone: ${doc.phone}\nCountry: ${doc.country}\nMessage: ${doc.message}`,
     });
 
-    // მომხმარებლისთვის
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: doc.email,
