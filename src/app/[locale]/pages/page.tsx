@@ -14,7 +14,7 @@ const schema = yup.object({
     .required("email is required")
     .matches(
       /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
-      "invalid email format"
+      "invalid email format",
     ),
   message: yup.string().required("text is required"),
 });
@@ -53,7 +53,6 @@ export default function Register() {
         throw new Error("Failed to save data");
       }
     } catch (error) {
-      console.error(error);
       setLoading(false);
     }
   };
