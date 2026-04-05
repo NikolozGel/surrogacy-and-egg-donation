@@ -31,10 +31,11 @@
     "submit": "Send Message",
     "successTitle": "Message Sent!",
     "successMessage": "Thank you for reaching out. We'll be in touch with you shortly.",
-    "genericError": "Something went wrong. Please try again."
+    "genericError": "Something went wrong. Please try again.",
+    "timeoutError": "Error"
   },
   "ContactCta": {
-    "badge": "FamilyWay International",
+    "badge": "IVFertility Georgia",
     "heading": "Let's Talk. We're Here for Every Part of Your Story",
     "paragraph1": "Many families who contact us have already spent years researching fertility treatment, navigating previous medical experiences, and exploring the different paths to parenthood.The questions you bring are ones we hear every day from understanding success rates in Georgia to how surrogate matching, egg donation, legal protections, and timelines work. Our team is here to provide clear and honest guidance based on real experience working with international parents.",
     "paragraph2": "Tell us a little about your situation as much or as little as you feel comfortable sharing. A senior member of our coordination team will personally review your message and respond within one business day.",
@@ -46,21 +47,21 @@
     "heading": "Your Path to Parenthood in Georgia",
     "imageAlt": "A tender moment symbolizing the beginning of parenthood",
     "body1": "Surrogacy has been legally supported in Georgia for decades, making the country one of the most recognized destinations for assisted reproductive services. Over the years, the development of modern IVF technologies and experienced medical teams has created a reliable environment for individuals and couples seeking alternative paths to parenthood. This progress has also led to improved clinical standards, greater transparency, and a stronger focus on patient-centered care throughout the journey.",
-    "body2": "For those facing fertility challenges, surrogacy can offer a meaningful and realistic opportunity to build a family. At FamilyWay international, we approach every journey with responsibility, empathy, and professionalism. We understand the emotional and medical complexity involved, which is why we ensure continuous support for both intended parents and surrogate mothers. From medical coordination to psychological guidance, every step is carefully managed to create a safe, respectful, and well-supported experience focused on achieving a healthy pregnancy and a positive outcome for everyone involved.",
+    "body2": "For those facing fertility challenges, surrogacy can offer a meaningful and realistic opportunity to build a family. At IVFertility georgia, we approach every journey with responsibility, empathy, and professionalism. We understand the emotional and medical complexity involved, which is why we ensure continuous support for both intended parents and surrogate mothers. From medical coordination to psychological guidance, every step is carefully managed to create a safe, respectful, and well-supported experience focused on achieving a healthy pregnancy and a positive outcome for everyone involved.",
     "quote": "Our role is simple: to ensure the process is medically sound, legally secure, and clearly organized from start to finish."
   },
   "missionSection": {
     "title": "Our Story and Mission",
-    "description1": "FamilyWay International was created with a simple but meaningful goal to make the path to parenthood more accessible and less overwhelming. For more than a decade, we have been working in the field of reproductive medicine in Georgia, supporting individuals and couples through one of the most important journeys of their lives.",
+    "description1": "IVFertility georgia was created with a simple but meaningful goal to make the path to parenthood more accessible and less overwhelming. For more than a decade, we have been working in the field of reproductive medicine in Georgia, supporting individuals and couples through one of the most important journeys of their lives.",
     "description2": "We understand that every story is different. That is why we focus on providing safe, ethical, and medically advanced IVF and surrogacy programs, while making sure each intended parent feels informed, respected, and genuinely supported at every step.",
     "visionTitle": "Our Vision",
     "visionText": "To become a trusted and reliable fertility partner for families around the world.",
     "valuesTitle": "Our Values",
     "valuesText": "Care, honesty, and a strong commitment to medical quality.",
-    "imageAlt": "Modern fertility clinic interior at FamilyWay International in Tbilisi, Georgia"
+    "imageAlt": "Modern fertility clinic interior at IVFertility georgia in Tbilisi, Georgia"
   },
   "teamSection": {
-    "title": "FamilyWay International Team",
+    "title": "IVFertility georgia Team",
     "members": {
       "1": {
         "name": "Lali Megreladze",
@@ -79,7 +80,7 @@
         "role": "International Patient Coordinator"
       }
     },
-    "imageAlt": "{name}, {role} at FamilyWay International fertility clinic"
+    "imageAlt": "{name}, {role} at IVFertility georgia fertility clinic"
   },
   "ServicesPage": {
     "programs": [
@@ -201,7 +202,7 @@
       "cookies": "Cookie Policy"
     },
 
-    "copyright": "© 2026 FamilyWay International. All rights reserved."
+    "copyright": "© 2026 IVFertility georgia. All rights reserved."
   },
   "faq": {
     "meta": {
@@ -294,8 +295,8 @@
     ]
   },
   "contact": {
-    "pageTitle": "Contact FamilyWay International | IVF Clinic in Tbilisi, Georgia",
-    "pageDescription": "Get in touch with FamilyWay International in Tbilisi, Georgia. Schedule a free fertility consultation, ask a question, or plan your visit.",
+    "pageTitle": "Contact IVFertility georgia | IVF Clinic in Tbilisi, Georgia",
+    "pageDescription": "Get in touch with IVFertility georgia in Tbilisi, Georgia. Schedule a free fertility consultation, ask a question, or plan your visit.",
     "hero": {
       "heading": "Get in Touch",
       "subheading": "We are here to listen, answer your questions, and help you take the first step on your fertility journey."
@@ -362,7 +363,7 @@
       "phone": "+995 575 757 535"
     },
     "map": {
-      "title": "FamilyWay International clinic location in Tbilisi, Georgia"
+      "title": "IVFertility georgia clinic location in Tbilisi, Georgia"
     }
   },
   "law": {
@@ -432,7 +433,7 @@
     },
     "legalTeam": {
       "heading": "Our Legal Team Works for You",
-      "paragraph1": "At FamilyWay International, you never have to navigate the legal process alone. Our in-house legal team has handled surrogacy and IVF agreements for families from over 40 countries. We prepare every contract, coordinate with local authorities, and liaise with your home country's embassy to ensure a smooth transition.",
+      "paragraph1": "At IVFertility georgia, you never have to navigate the legal process alone. Our in-house legal team has handled surrogacy and IVF agreements for families from over 40 countries. We prepare every contract, coordinate with local authorities, and liaise with your home country's embassy to ensure a smooth transition.",
       "paragraph2": "We believe legal clarity is the foundation of trust. That is why we explain every clause, answer every question, and never rush the process. Your peace of mind matters as much as the medical outcome.",
       "imageAlt": "Legal documents and contracts for surrogacy agreements in Georgia",
       "cta": "Book a Consultation"

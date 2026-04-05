@@ -86,7 +86,7 @@ export default function Team() {
   return (
     <section className="bg-background pb-20 flex flex-col items-center">
       <p className="py-20 text-4xl text-center font-semibold text-gray-600">
-        FamilyWay International Team
+        IVFertilityGeorgia Team
       </p>
 
       <div className="container mx-auto px-4 lg:px-8">

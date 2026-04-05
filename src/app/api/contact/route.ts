@@ -1,15 +1,29 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
-import { getDb } from "@/lib/mongodb";
+import { google } from "googleapis";
 import nodemailer from "nodemailer";
+import credentials from "@/../service-account.json";
+import { contactSchema } from "@/../src/lib/schemas";
 
-const contactSchema = z.object({
-  fullname: z.string().min(2).max(100),
-  email: z.string().email(),
-  phone: z.string().min(6).max(30),
-  country: z.string().min(3).max(2000),
-  message: z.string().min(2).max(100),
+// Google Sheets setup
+const auth = new google.auth.GoogleAuth({
+  credentials,
+  scopes: ["https://www.googleapis.com/auth/spreadsheets"],
 });
+const sheets = google.sheets({ version: "v4", auth });
+const SPREADSHEET_ID = process.env.SPREADSHEET_ID;
+
+// ჩაწერა Google Sheet-ში
+async function saveLeadToSheet(doc: any) {
+  await sheets.spreadsheets.values.append({
+    spreadsheetId: SPREADSHEET_ID,
+    range: "Leads!A:E", // შენი Sheet-ის კოლონები: fullname,email,phone,country,message
+    valueInputOption: "RAW",
+    requestBody: {
+      values: [[doc.fullname, doc.email, doc.phone, doc.country, doc.message]],
+    },
+  });
+}
 
 export async function POST(req: NextRequest) {
   try {
@@ -32,17 +46,18 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const db = await getDb();
-    console.log("db: ", db.databaseName);
-    const collection = db.collection("contacts");
     const doc = { ...parsed.data, createdAt: new Date() };
-    await collection.insertOne(doc);
 
+    // 1️⃣ Google Sheets-ში ჩაწერა
+    await saveLeadToSheet(doc);
+
+    // 2️⃣ Nodemailer
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: { user: process.env.EMAIL_USER, pass: process.env.EMAIL_PASS },
     });
 
+    // შენთვის
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: process.env.EMAIL_USER,
@@ -50,6 +65,7 @@ export async function POST(req: NextRequest) {
       text: `Name: ${doc.fullname}\nEmail: ${doc.email}\nPhone: ${doc.phone}\nCountry: ${doc.country}\nMessage: ${doc.message}`,
     });
 
+    // მომხმარებლისთვის
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: doc.email,
@@ -59,7 +75,8 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ ok: true }, { status: 201 });
   } catch (e) {
-    console.error("Server error:", e);
+    console.log("Server error:", e);
+
     return NextResponse.json(
       { ok: false, error: "Server error" },
       { status: 500 },
